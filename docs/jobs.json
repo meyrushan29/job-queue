@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-06T08:31:03Z",
+ "generatedAt": "2026-09-06T12:13:39Z",
  "threshold": 8,
- "count": 8,
+ "count": 9,
  "jobs": [
   {
    "id": "tj-0001543734",
@@ -19,6 +19,22 @@
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543734&ec=DEFZZZ",
    "source": "topjobs.lk"
+  },
+  {
+   "id": "15004",
+   "title": "Frontend Developer - React",
+   "company": "Wisdom RecruitmentS",
+   "location": "Remote",
+   "category": "Software Engineering",
+   "jobType": "Full-time",
+   "posted": "2026-09-06 15:10:30",
+   "score": 15,
+   "matched": [
+    "react"
+   ],
+   "blurb": "are you a talented react developer looking for a high-impact, full-time remote role with international exposure? we are sourcing for a leading australia-based it firm seeking a proactive frontend developer based in sri lanka. key details: 📍 location: 100%...",
+   "url": "https://itpro.lk/job/15004/",
+   "source": "ITPro.lk"
   },
   {
    "id": "tj-0001540234",
