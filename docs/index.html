@@ -235,7 +235,7 @@ function rowHTML(j){
   const pct = Math.round(j.score / top * 100);
   const d = daysSince(j.posted);
   const stale = d !== null && d > 60;
-  const where = [j.company || "Company not listed", j.location].filter(Boolean).join(" · ");
+  const where = [j.company || "Company not listed", j.location, j.source].filter(Boolean).join(" · ");
   const chips = j.matched.slice(0,7).map(m => `<span class="chip">${esc(m)}</span>`).join("");
 
   const actions = view === "open"

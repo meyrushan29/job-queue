@@ -1,9 +1,10 @@
 """
-ITPro.lk job queue.
+Sri Lanka IT job queue.
 
-Polls the public ITPro.lk jobs API, scores every vacancy against your profile,
-and writes docs/jobs.json for the dashboard to read. Telegram notifications are
-optional and off unless you set the two environment variables.
+Polls ITPro.lk's public jobs API and scrapes topjobs.lk's IT listings, scores
+every vacancy against your profile, and writes docs/jobs.json for the
+dashboard to read. Telegram notifications are optional and off unless you set
+the two environment variables.
 
 Build the dashboard data:  python job_alert.py
 Preview in the terminal:   python job_alert.py --dry-run
@@ -26,6 +27,26 @@ ROOT = Path(__file__).parent
 SEEN_FILE = ROOT / "seen.json"
 EXPORT_FILE = ROOT / "docs" / "jobs.json"
 USER_AGENT = "job-alert-bot/1.0 (personal job search)"
+
+# topjobs.lk has no public API; its IT category page is plain server-rendered
+# HTML (JSP), so we scrape the listing table directly. It never exposes real
+# description text (postings are image ads), so topjobs jobs are scored on
+# title alone.
+TOPJOBS_LIST_URL = "https://topjobs.lk/applicant/vacancybyfunctionalarea.jsp?FA={fa}&jst=OPEN"
+TOPJOBS_DETAIL_URL = "https://topjobs.lk/employer/JobAdvertismentServlet?ac={ac}&jc={jc}&ec={ec}"
+TOPJOBS_CATEGORIES = {
+    "SDQ": "IT-Software/DB/QA/Web/Graphics/GIS",
+}
+TOPJOBS_ROW_RE = re.compile(
+    r"createAlert\('\d+','(?P<agent>[^']*)','(?P<job>[^']*)','(?P<emp>[^']*)'.*?"
+    r"<h2><span>(?P<title>.*?)</span></h2>\s*"
+    r"<h1>(?P<company>.*?)</h1>.*?"
+    r'<td width="35%">.*?</td>\s*'
+    r'<td width="12%" nowrap class="" >\s*(?P<opened>[^<]*?)</td>.*?'
+    r'<td width="12%" nowrap class="" >\s*(?P<closed>[^<]*?)</td>.*?'
+    r'<td width="8%" nowrap class="" >\s*(?P<location>[^<]*?)</td>',
+    re.DOTALL,
+)
 
 # ITPro.lk category ids, for showing a readable label in the dashboard.
 CATEGORY_NAMES = {
@@ -122,7 +143,8 @@ SCORE_THRESHOLD = 8
 
 # Locations you would actually accept. Leave empty to accept everything.
 ALLOWED_LOCATIONS = {"colombo", "remote", "malabe", "rajagiriya", "nugegoda",
-                     "kottawa", "moratuwa", "jaffna", "dehiwala", "kaduwela"}
+                     "kottawa", "moratuwa", "jaffna", "dehiwala", "kaduwela",
+                     "all island"}
 
 
 # ---------------------------------------------------------------------------
@@ -142,6 +164,43 @@ def fetch_jobs(retries=3):
             if attempt < retries - 1:
                 time.sleep(5 * (attempt + 1))
     raise RuntimeError(f"Could not fetch jobs after {retries} tries: {last_error}")
+
+
+def fetch_topjobs_jobs():
+    """Scrape topjobs.lk's IT functional-area listing page(s)."""
+    jobs = []
+    for fa_code, category in TOPJOBS_CATEGORIES.items():
+        url = TOPJOBS_LIST_URL.format(fa=fa_code)
+        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                page = response.read().decode("utf-8", errors="replace")
+        except Exception as error:
+            print(f"topjobs.lk fetch failed for {fa_code}: {error}", file=sys.stderr)
+            continue
+
+        for match in TOPJOBS_ROW_RE.finditer(page):
+            job_code = match.group("job")
+            jobs.append({
+                "id": "tj-" + job_code,
+                "title": html.unescape(match.group("title")).strip(),
+                "company": html.unescape(match.group("company")).strip(),
+                "location": html.unescape(match.group("location")).strip(),
+                "category": category,
+                "posted": parse_topjobs_date(match.group("opened").strip()),
+                "url": TOPJOBS_DETAIL_URL.format(
+                    ac=match.group("agent"), jc=job_code, ec=match.group("emp")),
+            })
+    return jobs
+
+
+def parse_topjobs_date(text):
+    """'Sat Sep 05 2026' -> '2026-09-05 00:00:00', the dashboard's format."""
+    try:
+        parsed = time.strptime(text, "%a %b %d %Y")
+    except ValueError:
+        return ""
+    return time.strftime("%Y-%m-%d 00:00:00", parsed)
 
 
 def strip_html(text):
@@ -166,35 +225,60 @@ def parse_location(summary):
     return match.group(1).strip() if match else "Unknown"
 
 
-def score_job(job):
-    """Return (score, matched_keywords) for a single job."""
-    title = (job.get("title") or "").lower()
-    body = strip_html(job.get("description")) + " " + (job.get("summary") or "").lower()
+def title_blocked(title):
+    return any(blocked in title for blocked in TITLE_BLOCKLIST)
 
-    for blocked in TITLE_BLOCKLIST:
-        if blocked in title:
-            return 0, []
 
-    if ALLOWED_CATEGORIES and str(job.get("category_id")) not in ALLOWED_CATEGORIES:
-        return 0, []
+def location_allowed(location):
+    if not ALLOWED_LOCATIONS:
+        return True
+    location = location.lower()
+    return any(place in location for place in ALLOWED_LOCATIONS)
 
-    location = parse_location(job.get("summary")).lower()
-    if ALLOWED_LOCATIONS and not any(place in location for place in ALLOWED_LOCATIONS):
-        return 0, []
 
+def score_by_keywords(title, body=""):
+    """Return (score, matched_keywords). A hit in the title counts triple."""
     score = 0
     matched = []
     for keyword, weight in KEYWORDS.items():
         in_title = keyword in title
-        in_body = keyword in body
+        in_body = bool(body) and keyword in body
         if in_title:
             score += weight * 3
             matched.append(keyword)
         elif in_body:
             score += weight
             matched.append(keyword)
-
     return score, matched
+
+
+def score_job(job):
+    """Return (score, matched_keywords) for a single ITPro.lk job."""
+    title = (job.get("title") or "").lower()
+    body = strip_html(job.get("description")) + " " + (job.get("summary") or "").lower()
+
+    if title_blocked(title):
+        return 0, []
+
+    if ALLOWED_CATEGORIES and str(job.get("category_id")) not in ALLOWED_CATEGORIES:
+        return 0, []
+
+    location = parse_location(job.get("summary"))
+    if not location_allowed(location):
+        return 0, []
+
+    return score_by_keywords(title, body)
+
+
+def score_topjobs_job(title, location):
+    """Return (score, matched_keywords) for a topjobs.lk job (title only —
+    topjobs postings are image ads with no machine-readable description)."""
+    title = title.lower()
+    if title_blocked(title):
+        return 0, []
+    if not location_allowed(location):
+        return 0, []
+    return score_by_keywords(title)
 
 
 def build_export_record(job, score, matched):
@@ -215,6 +299,25 @@ def build_export_record(job, score, matched):
         "matched": sorted(set(matched)),
         "blurb": blurb,
         "url": JOB_URL.format(id=job.get("id")),
+        "source": "ITPro.lk",
+    }
+
+
+def build_topjobs_export_record(job, score, matched):
+    """Shape one scraped topjobs.lk row for the dashboard."""
+    return {
+        "id": job["id"],
+        "title": job["title"] or "Untitled",
+        "company": job["company"] or "",
+        "location": job["location"] or "Unknown",
+        "category": job["category"],
+        "jobType": "",
+        "posted": job["posted"],
+        "score": score,
+        "matched": sorted(set(matched)),
+        "blurb": "",
+        "url": job["url"],
+        "source": "topjobs.lk",
     }
 
 
@@ -241,26 +344,31 @@ def load_seen():
     return set()
 
 
+def _seen_sort_key(value):
+    """Ids are either plain ITPro numbers or 'tj-<number>'; sort newest-ish first."""
+    digits = re.sub(r"\D", "", value)
+    return int(digits) if digits else 0
+
+
 def save_seen(seen_ids):
     # Keep the file from growing forever; the newest 2000 ids is plenty.
-    trimmed = sorted(seen_ids, key=lambda value: int(value), reverse=True)[:2000]
+    trimmed = sorted(seen_ids, key=_seen_sort_key, reverse=True)[:2000]
     SEEN_FILE.write_text(json.dumps(trimmed, indent=1))
 
 
-def format_message(job, score, matched):
-    """Build the Telegram message for one job."""
-    title = html.escape(job.get("title") or "Untitled")
-    company = html.escape(job.get("company") or "Company not listed")
-    location = html.escape(parse_location(job.get("summary")))
-    link = JOB_URL.format(id=job.get("id"))
-    tags = ", ".join(sorted(set(matched))[:6])
+def format_message(record):
+    """Build the Telegram message for one exported job record."""
+    title = html.escape(record["title"])
+    company = html.escape(record["company"] or "Company not listed")
+    location = html.escape(record["location"])
+    tags = ", ".join(record["matched"][:6])
 
     return (
         f"<b>{title}</b>\n"
-        f"{company} — {location}\n"
-        f"Match score: {score}\n"
+        f"{company} — {location} · {html.escape(record['source'])}\n"
+        f"Match score: {record['score']}\n"
         f"Skills matched: {html.escape(tags)}\n\n"
-        f'<a href="{link}">Open the listing</a>'
+        f'<a href="{record["url"]}">Open the listing</a>'
     )
 
 
@@ -296,13 +404,18 @@ def main():
                         help="mark everything as seen without notifying")
     args = parser.parse_args()
 
-    jobs = fetch_jobs()
-    print(f"Fetched {len(jobs)} jobs from ITPro.lk")
+    itpro_jobs = fetch_jobs()
+    print(f"Fetched {len(itpro_jobs)} jobs from ITPro.lk")
+    topjobs_jobs = fetch_topjobs_jobs()
+    print(f"Fetched {len(topjobs_jobs)} jobs from topjobs.lk")
+
+    all_ids = ({str(job.get("id")) for job in itpro_jobs}
+               | {job["id"] for job in topjobs_jobs})
 
     seen = load_seen()
 
     if args.seed:
-        save_seen(seen | {str(job.get("id")) for job in jobs})
+        save_seen(seen | all_ids)
         print("Marked all current jobs as seen.")
         return
 
@@ -310,13 +423,23 @@ def main():
     # feeds Telegram, if it is switched on at all.
     all_matches = []
     fresh_matches = []
-    for job in jobs:
+    for job in itpro_jobs:
         score, matched = score_job(job)
         if score < SCORE_THRESHOLD:
             continue
-        all_matches.append(build_export_record(job, score, matched))
-        if str(job.get("id")) not in seen:
-            fresh_matches.append((score, job, matched))
+        record = build_export_record(job, score, matched)
+        all_matches.append(record)
+        if record["id"] not in seen:
+            fresh_matches.append(record)
+
+    for job in topjobs_jobs:
+        score, matched = score_topjobs_job(job["title"], job["location"])
+        if score < SCORE_THRESHOLD:
+            continue
+        record = build_topjobs_export_record(job, score, matched)
+        all_matches.append(record)
+        if record["id"] not in seen:
+            fresh_matches.append(record)
 
     print(f"{len(all_matches)} job(s) above threshold {SCORE_THRESHOLD}, "
           f"{len(fresh_matches)} of them new")
@@ -324,19 +447,19 @@ def main():
     if args.dry_run:
         for record in sorted(all_matches, key=lambda r: -r["score"]):
             print(f"  {record['score']:3d}  {record['location']:10s}  "
-                  f"{record['title'][:50]}")
+                  f"{record['title'][:45]:45s}  [{record['source']}]")
         return
 
     export_for_dashboard(all_matches)
 
     # Telegram is optional. Skipped silently when the variables are absent.
     if os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_CHAT_ID"):
-        fresh_matches.sort(key=lambda row: row[0], reverse=True)
-        for score, job, matched in fresh_matches:
-            send_telegram(format_message(job, score, matched))
+        fresh_matches.sort(key=lambda record: record["score"], reverse=True)
+        for record in fresh_matches:
+            send_telegram(format_message(record))
             time.sleep(1)  # stay under Telegram's rate limit
 
-    seen |= {str(job.get("id")) for job in jobs}
+    seen |= all_ids
     save_seen(seen)
 
 
