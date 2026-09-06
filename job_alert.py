@@ -129,7 +129,6 @@ TITLE_BLOCKLIST = [
     "hr ",
     "human resource",
     "accountant",
-    "intern",  # you have 2 years experience — remove this line to see internships
 ]
 
 # ITPro.lk category ids. Only jobs in these categories are considered.

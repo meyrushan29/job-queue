@@ -9,14 +9,20 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#eff2f1;
+  --bg:#eef1f3;
   --surface:#fff;
   --ink:#14181a;
   --muted:#6b7573;
-  --rule:#d8dedc;
+  --rule:#dde3e1;
   --signal:#16705a;
   --signal-soft:#e4efeb;
   --warn:#a8531f;
+  --itpro:#16705a;
+  --itpro-soft:#e4efeb;
+  --topjobs:#4338ca;
+  --topjobs-soft:#e8e7fb;
+  --shadow:0 1px 2px rgba(20,24,26,.05), 0 1px 1px rgba(20,24,26,.03);
+  --shadow-hover:0 8px 20px rgba(20,24,26,.09), 0 2px 6px rgba(20,24,26,.05);
   --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
@@ -27,7 +33,7 @@ body{
   font-size:15px;line-height:1.5;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:860px;margin:0 auto;padding:0 20px 80px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px 80px}
 
 /* ---------- masthead ---------- */
 header{padding:36px 0 20px}
@@ -57,8 +63,10 @@ header{padding:36px 0 20px}
 }
 .controls input[type=search],.controls select{
   font:inherit;font-size:14px;color:var(--ink);background:var(--surface);
-  border:1px solid var(--rule);border-radius:5px;padding:7px 10px;
+  border:1px solid var(--rule);border-radius:8px;padding:8px 12px;
+  transition:border-color .15s ease;
 }
+.controls input[type=search]:hover,.controls select:hover{border-color:#c7cfcc}
 .controls input[type=search]{flex:1;min-width:150px}
 .controls input:focus-visible,.controls select:focus-visible,
 button:focus-visible,a:focus-visible{
@@ -70,12 +78,39 @@ button:focus-visible,a:focus-visible{
 }
 .reset:hover{color:var(--warn)}
 
+/* ---------- source sections ---------- */
+.source-head{
+  display:flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--muted);margin:28px 0 12px;
+}
+.source-head:first-child{margin-top:22px}
+.source-head .dot{width:7px;height:7px;border-radius:50%;flex:none}
+.source-head .count{
+  font-family:var(--mono);color:var(--ink);font-weight:500;
+  text-transform:none;letter-spacing:0;
+}
+.source-head.src-itpro .dot{background:var(--itpro)}
+.source-head.src-topjobs .dot{background:var(--topjobs)}
+
 /* ---------- rows ---------- */
 .row{
   display:grid;grid-template-columns:64px 1fr;gap:16px;
-  padding:20px 0;border-bottom:1px solid var(--rule);
+  padding:18px;margin-bottom:10px;
+  background:var(--surface);border:1px solid var(--rule);border-radius:12px;
+  box-shadow:var(--shadow);
+  transition:box-shadow .15s ease,border-color .15s ease,transform .15s ease;
 }
+.row:hover{box-shadow:var(--shadow-hover);border-color:#c7cfcc;transform:translateY(-1px)}
 .row.going{opacity:0;transform:translateY(-6px);transition:opacity .22s,transform .22s}
+
+.src-tag{
+  display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.03em;
+  text-transform:uppercase;padding:2px 7px;border-radius:5px;
+  vertical-align:middle;margin-left:8px;
+}
+.src-tag.itpro{color:var(--itpro);background:var(--itpro-soft)}
+.src-tag.topjobs{color:var(--topjobs);background:var(--topjobs-soft)}
 
 /* the score bar — the one bold element */
 .gauge{padding-top:3px}
@@ -230,12 +265,16 @@ function counts(){
   document.getElementById("n-hidden").textContent = c.hidden;
 }
 
+function sourceSlug(source){
+  return (source || "").toLowerCase().includes("topjobs") ? "topjobs" : "itpro";
+}
+
 function rowHTML(j){
   const top = Math.max(...DATA.jobs.map(x => x.score), 1);
   const pct = Math.round(j.score / top * 100);
   const d = daysSince(j.posted);
   const stale = d !== null && d > 60;
-  const where = [j.company || "Company not listed", j.location, j.source].filter(Boolean).join(" · ");
+  const where = [j.company || "Company not listed", j.location].filter(Boolean).join(" · ");
   const chips = j.matched.slice(0,7).map(m => `<span class="chip">${esc(m)}</span>`).join("");
 
   const actions = view === "open"
@@ -251,7 +290,7 @@ function rowHTML(j){
       <div class="num">${j.score}</div>
     </div>
     <div>
-      <h2 class="jtitle">${esc(j.title)}</h2>
+      <h2 class="jtitle">${esc(j.title)}<span class="src-tag ${sourceSlug(j.source)}">${esc(j.source || "")}</span></h2>
       <p class="meta">${esc(where)}${j.jobType ? " · " + esc(j.jobType) : ""}
         ${d !== null ? ` · <span class="age${stale ? " old" : ""}">${ageText(d)}</span>` : ""}</p>
       ${j.blurb ? `<p class="blurb">${esc(j.blurb)}</p>` : ""}
@@ -261,11 +300,35 @@ function rowHTML(j){
   </article>`;
 }
 
+const SOURCE_ORDER = ["ITPro.lk", "topjobs.lk"];
+
+function groupBySource(rows){
+  const groups = new Map();
+  for(const j of rows){
+    const key = j.source || "Other";
+    if(!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(j);
+  }
+  return [...groups.keys()]
+    .sort((a, b) => {
+      const ia = SOURCE_ORDER.indexOf(a), ib = SOURCE_ORDER.indexOf(b);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    })
+    .map(key => [key, groups.get(key)]);
+}
+
+function sectionHTML(source, rows){
+  return `<div class="source-head src-${sourceSlug(source)}">
+      <span class="dot"></span>${esc(source)} <span class="count">${rows.length}</span>
+    </div>
+    ${rows.map(rowHTML).join("")}`;
+}
+
 function emptyHTML(){
   if(!DATA.jobs.length){
     return `<div class="empty">
       <h2>No job data yet</h2>
-      <p>Run the collector to fetch the current openings from ITPro.lk:</p>
+      <p>Run the collector to fetch the current openings from ITPro.lk and topjobs.lk:</p>
       <p><code>python job_alert.py</code></p>
       <p>That writes <code>docs/jobs.json</code>, which this page reads.</p>
     </div>`;
@@ -273,7 +336,7 @@ function emptyHTML(){
   if(view === "open"){
     return `<div class="empty">
       <h2>Queue is clear</h2>
-      <p>Every match has been actioned. New openings appear here after the next hourly run.</p>
+      <p>Every match has been actioned. New openings appear here after the next refresh.</p>
     </div>`;
   }
   if(view === "applied"){
@@ -292,7 +355,13 @@ function render(){
   counts();
   const rows = visible();
   const list = document.getElementById("list");
-  list.innerHTML = rows.length ? rows.map(rowHTML).join("") : emptyHTML();
+  if(!rows.length){
+    list.innerHTML = emptyHTML();
+    return;
+  }
+  list.innerHTML = groupBySource(rows)
+    .map(([source, group]) => sectionHTML(source, group))
+    .join("");
 }
 
 function mark(id, state){
@@ -332,7 +401,7 @@ function setStamp(sample){
     : mins < 60 ? mins + " minutes ago"
     : mins < 1440 ? Math.round(mins/60) + " hours ago"
     : Math.round(mins/1440) + " days ago";
-  el.innerHTML = `<b>${DATA.jobs.length}</b> matches from ITPro.lk · updated ${rel}`;
+  el.innerHTML = `<b>${DATA.jobs.length}</b> matches from ITPro.lk &amp; topjobs.lk · updated ${rel}`;
   if(sample){
     const n = document.createElement("div");
     n.className = "notice";
