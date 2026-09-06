@@ -2,8 +2,8 @@ name: Refresh job queue
 
 on:
   schedule:
-    # Every hour between 03:00 and 15:00 UTC = 08:30 to 20:30 Sri Lanka time.
-    - cron: "0 3-15 * * *"
+    # Every 30 minutes between 03:00 and 15:00 UTC = 08:30 to 20:30 Sri Lanka time.
+    - cron: "0,30 3-15 * * *"
   workflow_dispatch:        # lets you run it by hand from the Actions tab
   push:
     branches: [main]        # rebuild when you change the filters
