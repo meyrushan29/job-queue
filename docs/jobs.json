@@ -1,6 +1,72 @@
 {
- "generatedAt": "2026-09-06T07:36:33Z",
+ "generatedAt": "2026-09-06T08:00:47Z",
  "threshold": 8,
- "count": 0,
- "jobs": []
+ "count": 4,
+ "jobs": [
+  {
+   "id": "tj-0001543734",
+   "title": "Junior Full Stack Developer",
+   "company": "Company Name Withheld",
+   "location": "All island",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-05 00:00:00",
+   "score": 24,
+   "matched": [
+    "full stack",
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543734&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001542071",
+   "title": "Associate Software Engineer  (1)",
+   "company": "Jobfactory",
+   "location": "Malabe",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-08-31 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000375&jc=0001542071&ec=0000000492",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001541742",
+   "title": "Junior Software Trainer",
+   "company": "Webappclouds (Pvt) Ltd",
+   "location": "Colombo 5",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-08-28 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541742&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001543853",
+   "title": "Junior Project Engineer",
+   "company": "Aiken (Pvt) Ltd",
+   "location": "Colombo 5",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-03 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543853&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  }
+ ]
 }
