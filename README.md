@@ -1,46 +1,43 @@
 # Job queue — ITPro.lk
 
-ITPro.lk-ல் இருக்கும் வேலைகளை உங்கள் skills-க்கு ஏற்ப score போட்டு,
-ஒரு dashboard-ல் வரிசைப்படுத்திக் காட்டும். தினமும் அதைத் திறந்து,
-மேலே இருக்கும் வேலைகளுக்கு apply பண்ணுங்கள்.
+**Language:** English · [தமிழ்](README.ta.md) · [සිංහල](README.si.md)
 
-Telegram தேவையில்லை. App install பண்ண வேண்டாம். Browser போதும்.
+Scores every job on ITPro.lk against your skills and lists them on a dashboard, best match first. Open it daily and apply to the ones at the top.
+
+No Telegram required. No app to install. A browser is enough.
 
 **Live URL:** `https://<your-username>.github.io/<repo-name>/`
 
 ---
 
-## இந்த repo-வை உங்களுக்காக use பண்ண
+## Using this repo for yourself
 
-இது ஒரு template. Fork பண்ணி, உங்கள் skills-க்கு ஏற்ப மாற்றி, உங்கள்
-GitHub account-ல் host பண்ணலாம். ஒவ்வொருவருக்கும் தனித்தனி copy வேண்டும் —
-scoring logic-ம் data-வும் அந்தந்த repo-வுக்குள்ளேயே இருக்கும்.
+This is a template. Fork it, adjust it to your own skills, and host it on your own GitHub account. Everyone needs their own copy — the scoring logic and data live inside each repo.
 
-### 1. Fork பண்ணி clone பண்ணுங்கள்
+### 1. Fork and clone
 
-GitHub-ல் இந்த repo-வை **Fork** பண்ணுங்கள் (மேலே வலது மூலையில் உள்ள
-Fork பொத்தான்). பிறகு உங்கள் fork-ஐ clone பண்ணுங்கள்:
+**Fork** this repo on GitHub (the Fork button, top right). Then clone your fork:
 
 ```bash
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 ```
 
-### 2. உங்கள் skills-க்கு ஏற்ப filters மாற்றுங்கள்
+### 2. Tune the filters to your skills
 
-`job_alert.py` கோப்பின் மேல் பகுதியில் எல்லா settings-உம் இருக்கின்றன:
+All the settings live at the top of `job_alert.py`:
 
-| Setting | என்ன செய்யும் |
+| Setting | What it does |
 |---|---|
-| `KEYWORDS` | எந்த skill-க்கு எவ்வளவு மதிப்பு. Title-ல் வந்தால் 3 மடங்கு. |
-| `TITLE_BLOCKLIST` | இந்த வார்த்தை title-ல் இருந்தால் விட்டுவிடும். |
-| `ALLOWED_CATEGORIES` | ITPro-வின் category ids (கீழே பட்டியல்). |
-| `SCORE_THRESHOLD` | இதற்கு மேல் score வந்தால் மட்டும் காட்டும். |
-| `ALLOWED_LOCATIONS` | நீங்கள் ஏற்கும் இடங்கள். |
+| `KEYWORDS` | How much each skill is worth. A hit in the title counts triple. |
+| `TITLE_BLOCKLIST` | Skip the job if this word appears in the title. |
+| `ALLOWED_CATEGORIES` | ITPro's category ids (list below). |
+| `SCORE_THRESHOLD` | Only show jobs scoring above this. |
+| `ALLOWED_LOCATIONS` | Locations you'd actually accept. |
 
-**வேலைகள் குறைவாக வருகிறதா?** `SCORE_THRESHOLD` -ஐ 8 → 5 ஆகக் குறையுங்கள்.
-**அதிகமாகவா?** 12 ஆக உயர்த்துங்கள்.
-**Internship-ம் வேண்டுமா?** `TITLE_BLOCKLIST`-ல் இருந்து `"intern"` -ஐ நீக்குங்கள்.
+**Too few jobs showing up?** Lower `SCORE_THRESHOLD` from 8 to 5.
+**Too many?** Raise it to 12.
+**Want internships too?** Remove `"intern"` from `TITLE_BLOCKLIST`.
 
 Category ids:
 
@@ -53,18 +50,16 @@ Category ids:
 | 42 | AI and Data |
 | 43 | Web Development |
 
-### 3. Local-ல் சோதித்துப் பாருங்கள் (optional)
+### 3. Try it locally first (optional)
 
 ```bash
-python job_alert.py          # docs/jobs.json உருவாக்கும்
+python job_alert.py          # builds docs/jobs.json
 cd docs && python -m http.server 8000
 ```
 
-Browser-ல் `http://localhost:8000` திறங்கள். Terminal-ல் மட்டும் பார்க்க:
-`python job_alert.py --dry-run`. Python 3.9+ மட்டும் போதும், `pip install`
-எதுவும் தேவையில்லை.
+Open `http://localhost:8000` in a browser. To preview in the terminal only: `python job_alert.py --dry-run`. Python 3.9+ is all you need — no `pip install` required.
 
-### 4. GitHub-ல் push பண்ணி Pages-ஐ enable பண்ணுங்கள்
+### 4. Push to GitHub and enable Pages
 
 ```bash
 git add .
@@ -72,22 +67,14 @@ git commit -m "My filters"
 git push
 ```
 
-Repo → **Settings** → **Pages** → Source: **GitHub Actions** என்று
-தேர்ந்தெடுங்கள். பிறகு Repo → **Actions** tab → **Refresh job queue** →
-**Run workflow** (முதல் முறை கைமுறையாக run பண்ணணும்). பச்சை tick
-வந்தபிறகு, Settings → Pages-ல் உங்கள் URL தெரியும்.
+Repo → **Settings** → **Pages** → set Source to **GitHub Actions**. Then Repo → **Actions** tab → **Refresh job queue** → **Run workflow** (the first run has to be triggered by hand). Once the green tick appears, your URL will show up under Settings → Pages.
 
-அதன் பிறகு workflow தானாக ஒவ்வொரு மணி நேரமும் ஓடி dashboard-ஐ update
-பண்ணும், Push பண்ணும்போதும் rebuild ஆகும்.
+After that, the workflow refreshes the dashboard automatically every hour, and rebuilds whenever you push.
 
-Applied/hidden marks browser-ல் (localStorage) சேமிக்கப்படும் — எந்த
-phone/laptop-ல் திறக்கிறீர்களோ, அதில் மட்டும் தெரியும்.
+Applied/hidden marks are saved in the browser (localStorage) — they only show up on the device you marked them from.
 
 ---
 
 ## Telegram (optional)
 
-வேண்டுமானால் மட்டும். Settings → Secrets and variables → Actions-ல்
-`TELEGRAM_BOT_TOKEN` (BotFather-ல் இருந்து), `TELEGRAM_CHAT_ID` ஆகிய
-இரண்டு secrets-ஐயும் போட்டால் புதிய வேலைகளுக்கு message-ம் வரும்;
-போடாவிட்டால் dashboard மட்டும் வேலை செய்யும்.
+Only if you want it. Add `TELEGRAM_BOT_TOKEN` (from BotFather) and `TELEGRAM_CHAT_ID` under Settings → Secrets and variables → Actions to get a message for new matches; leave them unset and the dashboard works on its own.
