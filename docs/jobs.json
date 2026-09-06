@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-06T08:06:10Z",
+ "generatedAt": "2026-09-06T08:23:56Z",
  "threshold": 8,
- "count": 4,
+ "count": 8,
  "jobs": [
   {
    "id": "tj-0001543734",
@@ -21,6 +21,22 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001540234",
+   "title": "Intern | Associate - Video & Graphic Design",
+   "company": "AFI Corp",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-08-24 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001540234&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001542071",
    "title": "Associate Software Engineer  (1)",
    "company": "Jobfactory",
@@ -37,6 +53,22 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001540684",
+   "title": "Junior | Intern Graphic Designer",
+   "company": "AdminoxPRO Lanka (Private) Limited",
+   "location": "Batticaloa, Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-08-25 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001540684&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001541742",
    "title": "Junior Software Trainer",
    "company": "Webappclouds (Pvt) Ltd",
@@ -50,6 +82,38 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541742&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001541740",
+   "title": "QA Intern | Junior QA",
+   "company": "Webappclouds (Pvt) Ltd",
+   "location": "Colombo 5",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-08-28 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541740&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001543913",
+   "title": "Formula 1 Graduate Placement Program (1 year Internship + 3-year job opportunities) (1)",
+   "company": "John Keells IT",
+   "location": "Colombo 2",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-03 00:00:00",
+   "score": 9,
+   "matched": [
+    "graduate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000049&jc=0001543913&ec=0000000313",
    "source": "topjobs.lk"
   },
   {
