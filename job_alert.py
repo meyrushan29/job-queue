@@ -133,8 +133,9 @@ TITLE_BLOCKLIST = [
 
 # ITPro.lk category ids. Only jobs in these categories are considered.
 # 21 = Software Engineering, 41 = Mobile Development, 43 = Web Development,
-# 42 = AI and Data, 39 = Quality Assurance, 38 = DevOps and Cloud
-ALLOWED_CATEGORIES = {"21", "41", "43", "42", "38"}
+# 42 = AI and Data, 39 = Quality Assurance, 38 = DevOps and Cloud,
+# 37 = IT and Operations (cybersecurity, infra, ops)
+ALLOWED_CATEGORIES = {"21", "41", "43", "42", "38", "37"}
 
 # Only notify when the score reaches this. Lower it if you get too few alerts,
 # raise it if you get too many.
