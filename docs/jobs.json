@@ -1,0 +1,32 @@
+{
+ "generatedAt": "2026-09-06T02:41:51Z",
+ "threshold": 8,
+ "count": 1,
+ "jobs": [
+  {
+   "id": "14995",
+   "title": "Associate Software Engineer (Full Stack)",
+   "company": "",
+   "location": "Colombo",
+   "category": "Software Engineering",
+   "jobType": "Full-time",
+   "posted": "2026-09-05 15:50:48",
+   "score": 58,
+   "matched": [
+    "associate",
+    "full stack",
+    "javascript",
+    "mongodb",
+    "mysql",
+    "node",
+    "node.js",
+    "postgresql",
+    "python",
+    "react",
+    "rest api"
+   ],
+   "blurb": "join our growing team and build innovative applications using modern technologies. we are looking for passionate, analytical, and motivated individuals who are eager to kick-start their software engineering careers. key responsibilities develop, test, and...",
+   "url": "https://itpro.lk/job/14995/"
+  }
+ ]
+}

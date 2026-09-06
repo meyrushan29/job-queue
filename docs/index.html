@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job queue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eff2f1;
+  --surface:#fff;
+  --ink:#14181a;
+  --muted:#6b7573;
+  --rule:#d8dedc;
+  --signal:#16705a;
+  --signal-soft:#e4efeb;
+  --warn:#a8531f;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 80px}
+
+/* ---------- masthead ---------- */
+header{padding:36px 0 20px}
+.title{font-size:28px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.stamp{
+  font-family:var(--mono);font-size:12px;color:var(--muted);
+  margin-top:6px;font-variant-numeric:tabular-nums;
+}
+.stamp b{color:var(--ink);font-weight:500}
+
+/* ---------- tabs ---------- */
+.tabs{display:flex;gap:2px;margin-top:22px;border-bottom:1px solid var(--rule)}
+.tab{
+  font:inherit;font-size:14px;font-weight:450;color:var(--muted);
+  background:none;border:0;border-bottom:2px solid transparent;
+  padding:9px 14px 8px;cursor:pointer;margin-bottom:-1px;
+}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--signal);font-weight:500}
+.tab .n{font-family:var(--mono);font-size:12px;color:var(--muted);margin-left:5px}
+.tab[aria-selected="true"] .n{color:var(--signal)}
+
+/* ---------- controls ---------- */
+.controls{
+  display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  padding:14px 0;border-bottom:1px solid var(--rule);
+}
+.controls input[type=search],.controls select{
+  font:inherit;font-size:14px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--rule);border-radius:5px;padding:7px 10px;
+}
+.controls input[type=search]{flex:1;min-width:150px}
+.controls input:focus-visible,.controls select:focus-visible,
+button:focus-visible,a:focus-visible{
+  outline:2px solid var(--signal);outline-offset:2px;
+}
+.reset{
+  font:inherit;font-size:13px;color:var(--muted);background:none;
+  border:0;cursor:pointer;text-decoration:underline;padding:4px;
+}
+.reset:hover{color:var(--warn)}
+
+/* ---------- rows ---------- */
+.row{
+  display:grid;grid-template-columns:64px 1fr;gap:16px;
+  padding:20px 0;border-bottom:1px solid var(--rule);
+}
+.row.going{opacity:0;transform:translateY(-6px);transition:opacity .22s,transform .22s}
+
+/* the score bar — the one bold element */
+.gauge{padding-top:3px}
+.bar{height:5px;background:var(--rule);border-radius:3px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--signal);border-radius:3px}
+.num{
+  font-family:var(--mono);font-size:19px;font-weight:500;
+  font-variant-numeric:tabular-nums;margin-top:7px;line-height:1;
+}
+
+.jtitle{font-size:17px;font-weight:500;letter-spacing:-.01em;line-height:1.3}
+.meta{font-size:13.5px;color:var(--muted);margin-top:3px}
+.meta .age{font-family:var(--mono);font-size:12px}
+.meta .age.old{color:var(--warn)}
+.blurb{
+  font-size:13.5px;color:var(--muted);margin-top:9px;
+  max-width:64ch;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+.chip{
+  font-size:12px;color:var(--signal);background:var(--signal-soft);
+  border-radius:4px;padding:2px 7px;
+}
+.acts{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.btn{
+  font:inherit;font-size:13.5px;font-weight:450;
+  border:1px solid var(--rule);background:var(--surface);color:var(--ink);
+  border-radius:5px;padding:6px 12px;cursor:pointer;text-decoration:none;
+  display:inline-block;
+}
+.btn:hover{border-color:var(--ink)}
+.btn.go{background:var(--signal);border-color:var(--signal);color:#fff}
+.btn.go:hover{background:#125a48;border-color:#125a48}
+.btn.quiet{color:var(--muted)}
+.btn.quiet:hover{color:var(--warn);border-color:var(--warn)}
+
+/* ---------- empty + notices ---------- */
+.empty{padding:56px 0;max-width:52ch}
+.empty h2{font-size:19px;font-weight:500;margin-bottom:8px}
+.empty p{color:var(--muted);font-size:14.5px;margin-bottom:10px}
+.empty code{
+  font-family:var(--mono);font-size:13px;background:var(--surface);
+  border:1px solid var(--rule);border-radius:4px;padding:2px 6px;
+}
+.notice{
+  background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--warn);
+  border-radius:5px;padding:11px 14px;margin-top:18px;font-size:13.5px;color:var(--muted);
+}
+.notice b{color:var(--ink);font-weight:500}
+
+@media (max-width:560px){
+  .wrap{padding:0 16px 60px}
+  header{padding:26px 0 16px}
+  .title{font-size:23px}
+  .row{grid-template-columns:1fr;gap:0}
+  .gauge{display:flex;align-items:center;gap:10px;margin-bottom:11px}
+  .gauge .bar{flex:1;order:2}
+  .num{margin-top:0;order:1;font-size:17px;min-width:26px}
+  .acts .btn{flex:1;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  .row.going{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 class="title">Job queue</h1>
+    <p class="stamp" id="stamp">Loading…</p>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-view="open" aria-selected="true">To review <span class="n" id="n-open">0</span></button>
+      <button class="tab" role="tab" data-view="applied" aria-selected="false">Applied <span class="n" id="n-applied">0</span></button>
+      <button class="tab" role="tab" data-view="hidden" aria-selected="false">Hidden <span class="n" id="n-hidden">0</span></button>
+    </div>
+  </header>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search title, company, skill" aria-label="Search jobs">
+    <select id="loc" aria-label="Filter by location"><option value="">All locations</option></select>
+    <select id="cat" aria-label="Filter by category"><option value="">All categories</option></select>
+    <select id="min" aria-label="Minimum score">
+      <option value="0">Any score</option>
+      <option value="20">20+</option>
+      <option value="30">30+</option>
+      <option value="45">45+</option>
+    </select>
+    <button class="reset" id="reset">Clear my applied and hidden marks</button>
+  </div>
+
+  <main id="list" aria-live="polite"></main>
+</div>
+
+<script>
+const KEY = "itpro-queue-v1";
+let DATA = { jobs: [], generatedAt: null };
+let view = "open";
+let marks = load();
+
+function load(){
+  try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
+  catch { return {}; }
+}
+function persist(){
+  try { localStorage.setItem(KEY, JSON.stringify(marks)); }
+  catch(e){ console.warn("Could not save marks:", e); }
+}
+
+function daysSince(stamp){
+  if(!stamp) return null;
+  const then = new Date(stamp.replace(" ","T") + "Z");
+  if(isNaN(then)) return null;
+  return Math.floor((Date.now() - then) / 86400000);
+}
+function ageText(d){
+  if(d === null) return "";
+  if(d <= 0) return "today";
+  if(d === 1) return "yesterday";
+  return d + " days ago";
+}
+function esc(s){
+  return String(s).replace(/[&<>"']/g, c => (
+    {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]
+  ));
+}
+
+function visible(){
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const loc = document.getElementById("loc").value;
+  const cat = document.getElementById("cat").value;
+  const min = +document.getElementById("min").value;
+
+  return DATA.jobs.filter(j => {
+    if((marks[j.id] || "open") !== view) return false;
+    if(loc && j.location !== loc) return false;
+    if(cat && j.category !== cat) return false;
+    if(j.score < min) return false;
+    if(q){
+      const hay = (j.title + " " + j.company + " " + j.matched.join(" ") + " " + j.blurb).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function counts(){
+  const c = { open:0, applied:0, hidden:0 };
+  DATA.jobs.forEach(j => c[marks[j.id] || "open"]++);
+  document.getElementById("n-open").textContent = c.open;
+  document.getElementById("n-applied").textContent = c.applied;
+  document.getElementById("n-hidden").textContent = c.hidden;
+}
+
+function rowHTML(j){
+  const top = Math.max(...DATA.jobs.map(x => x.score), 1);
+  const pct = Math.round(j.score / top * 100);
+  const d = daysSince(j.posted);
+  const stale = d !== null && d > 60;
+  const where = [j.company || "Company not listed", j.location].filter(Boolean).join(" · ");
+  const chips = j.matched.slice(0,7).map(m => `<span class="chip">${esc(m)}</span>`).join("");
+
+  const actions = view === "open"
+    ? `<a class="btn go" href="${esc(j.url)}" target="_blank" rel="noopener">Open listing</a>
+       <button class="btn" data-do="applied" data-id="${esc(j.id)}">Mark applied</button>
+       <button class="btn quiet" data-do="hidden" data-id="${esc(j.id)}">Not for me</button>`
+    : `<a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Open listing</a>
+       <button class="btn quiet" data-do="open" data-id="${esc(j.id)}">Back to review</button>`;
+
+  return `<article class="row" data-row="${esc(j.id)}">
+    <div class="gauge">
+      <div class="bar"><span style="width:${pct}%"></span></div>
+      <div class="num">${j.score}</div>
+    </div>
+    <div>
+      <h2 class="jtitle">${esc(j.title)}</h2>
+      <p class="meta">${esc(where)}${j.jobType ? " · " + esc(j.jobType) : ""}
+        ${d !== null ? ` · <span class="age${stale ? " old" : ""}">${ageText(d)}</span>` : ""}</p>
+      ${j.blurb ? `<p class="blurb">${esc(j.blurb)}</p>` : ""}
+      ${chips ? `<div class="chips">${chips}</div>` : ""}
+      <div class="acts">${actions}</div>
+    </div>
+  </article>`;
+}
+
+function emptyHTML(){
+  if(!DATA.jobs.length){
+    return `<div class="empty">
+      <h2>No job data yet</h2>
+      <p>Run the collector to fetch the current openings from ITPro.lk:</p>
+      <p><code>python job_alert.py</code></p>
+      <p>That writes <code>docs/jobs.json</code>, which this page reads.</p>
+    </div>`;
+  }
+  if(view === "open"){
+    return `<div class="empty">
+      <h2>Queue is clear</h2>
+      <p>Every match has been actioned. New openings appear here after the next hourly run.</p>
+    </div>`;
+  }
+  if(view === "applied"){
+    return `<div class="empty">
+      <h2>Nothing marked applied</h2>
+      <p>Send an application, then mark it here so it leaves your review queue.</p>
+    </div>`;
+  }
+  return `<div class="empty">
+    <h2>Nothing hidden</h2>
+    <p>Roles you rule out will collect here, in case you change your mind.</p>
+  </div>`;
+}
+
+function render(){
+  counts();
+  const rows = visible();
+  const list = document.getElementById("list");
+  list.innerHTML = rows.length ? rows.map(rowHTML).join("") : emptyHTML();
+}
+
+function mark(id, state){
+  const row = document.querySelector(`[data-row="${CSS.escape(id)}"]`);
+  const done = () => {
+    if(state === "open") delete marks[id]; else marks[id] = state;
+    persist(); render();
+  };
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(row && !reduced){
+    row.classList.add("going");
+    setTimeout(done, 200);
+  } else {
+    done();
+  }
+}
+
+function fillFilters(){
+  const add = (id, values) => {
+    const sel = document.getElementById(id);
+    [...new Set(values)].filter(Boolean).sort().forEach(v => {
+      const o = document.createElement("option");
+      o.value = o.textContent = v;
+      sel.appendChild(o);
+    });
+  };
+  add("loc", DATA.jobs.map(j => j.location));
+  add("cat", DATA.jobs.map(j => j.category));
+}
+
+function setStamp(sample){
+  const el = document.getElementById("stamp");
+  if(!DATA.generatedAt){ el.textContent = "No data loaded"; return; }
+  const when = new Date(DATA.generatedAt);
+  const mins = Math.round((Date.now() - when) / 60000);
+  const rel = mins < 2 ? "just now"
+    : mins < 60 ? mins + " minutes ago"
+    : mins < 1440 ? Math.round(mins/60) + " hours ago"
+    : Math.round(mins/1440) + " days ago";
+  el.innerHTML = `<b>${DATA.jobs.length}</b> matches from ITPro.lk · updated ${rel}`;
+  if(sample){
+    const n = document.createElement("div");
+    n.className = "notice";
+    n.innerHTML = "<b>Sample data.</b> This page could not find jobs.json, so it is showing "
+      + "example rows to demonstrate the layout. Run <code>python job_alert.py</code> "
+      + "to load the real openings.";
+    document.querySelector("header").appendChild(n);
+  }
+}
+
+/* Sample rows so the page is never blank before the collector has run. */
+const SAMPLE = {
+  generatedAt: new Date().toISOString(),
+  jobs: [
+    {id:"s1",title:"Associate Software Engineer (Full Stack)",company:"",location:"Colombo",
+     category:"Software Engineering",jobType:"Full-time",posted:"2026-09-05 15:50:48",score:58,
+     matched:["associate","full stack","javascript","mongodb","node","react"],
+     blurb:"Develop, test and maintain scalable applications. Knowledge of HTML, CSS, JavaScript, React. Understanding of Node.js and Python. Familiarity with MySQL, PostgreSQL, MongoDB.",
+     url:"https://itpro.lk/job/14995/"},
+    {id:"s2",title:"Associate AI/ML Engineer",company:"MicroWe",location:"Jaffna",
+     category:"AI and Data",jobType:"Full-time",posted:"2026-06-23 10:00:00",score:48,
+     matched:["associate","machine learning","python","pytorch","llm"],
+     blurb:"Python machine learning, PyTorch, data pipelines and LLM integration for production systems.",
+     url:"https://itpro.lk/job/14109/"},
+    {id:"s3",title:"Junior Full Stack Developer",company:"Adelphoi Limited",location:"Remote",
+     category:"Software Engineering",jobType:"Full-time",posted:"2026-09-02 09:00:00",score:46,
+     matched:["full stack","junior","node","react","typescript"],
+     blurb:"React and Node.js with TypeScript and MongoDB, in a remote-first team.",
+     url:"https://itpro.lk/job/14949/"},
+    {id:"s4",title:"Associate Software Engineer",company:"Haulmatic Technologies",location:"Colombo",
+     category:"Software Engineering",jobType:"Full-time",posted:"2026-08-24 10:00:00",score:40,
+     matched:["associate","express","mern","mongodb","node"],
+     blurb:"MERN stack development with React, Node.js, Express and MongoDB. REST API design and Agile collaboration in the logistics domain.",
+     url:"https://itpro.lk/job/14835/"},
+    {id:"s5",title:"Associate Machine Learning Engineer",company:"JIT Resourcing",location:"Colombo",
+     category:"AI and Data",jobType:"Full-time",posted:"2026-08-19 10:00:00",score:32,
+     matched:["associate","machine learning","pandas","python"],
+     blurb:"Python, machine learning, pandas and TensorFlow. Model deployment and evaluation.",
+     url:"https://itpro.lk/job/14766/"}
+  ]
+};
+
+async function boot(){
+  let sample = false;
+  try{
+    const res = await fetch("jobs.json", {cache:"no-store"});
+    if(!res.ok) throw new Error(res.status);
+    DATA = await res.json();
+  }catch{
+    DATA = SAMPLE;
+    sample = true;
+  }
+  DATA.jobs = DATA.jobs || [];
+  fillFilters();
+  setStamp(sample);
+  render();
+}
+
+document.getElementById("list").addEventListener("click", e => {
+  const btn = e.target.closest("[data-do]");
+  if(btn) mark(btn.dataset.id, btn.dataset.do);
+});
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    view = tab.dataset.view;
+    document.querySelectorAll(".tab").forEach(t =>
+      t.setAttribute("aria-selected", String(t === tab)));
+    render();
+  });
+});
+["q","loc","cat","min"].forEach(id =>
+  document.getElementById(id).addEventListener("input", render));
+document.getElementById("reset").addEventListener("click", () => {
+  if(confirm("Clear every applied and hidden mark? The job list itself stays.")){
+    marks = {}; persist(); render();
+  }
+});
+
+boot();
+</script>
+</body>
+</html>
