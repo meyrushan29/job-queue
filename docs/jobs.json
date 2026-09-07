@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-06T15:36:34Z",
+ "generatedAt": "2026-09-07T07:47:55Z",
  "threshold": 8,
- "count": 9,
+ "count": 10,
  "jobs": [
   {
    "id": "tj-0001543734",
@@ -10,7 +10,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-05 00:00:00",
+   "posted": "2026-09-07 00:00:00",
    "score": 24,
    "matched": [
     "full stack",
@@ -117,22 +117,6 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001543913",
-   "title": "Formula 1 Graduate Placement Program (1 year Internship + 3-year job opportunities) (1)",
-   "company": "John Keells IT",
-   "location": "Colombo 2",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-03 00:00:00",
-   "score": 9,
-   "matched": [
-    "graduate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000049&jc=0001543913&ec=0000000313",
-   "source": "topjobs.lk"
-  },
-  {
    "id": "tj-0001543853",
    "title": "Junior Project Engineer",
    "company": "Aiken (Pvt) Ltd",
@@ -146,6 +130,38 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543853&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001541024",
+   "title": "Junior Mobile App Developer",
+   "company": "Nascent Grow (Pvt) Ltd",
+   "location": "Kottawa",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-07 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541024&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001541020",
+   "title": "Junior Web & Backend Developer",
+   "company": "Nascent Grow (Pvt) Ltd",
+   "location": "Kottawa",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-07 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541020&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
