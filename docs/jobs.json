@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-07T14:32:03Z",
+ "generatedAt": "2026-09-07T18:50:52Z",
  "threshold": 6,
- "count": 12,
+ "count": 10,
  "jobs": [
   {
    "id": "tj-0001543734",
@@ -18,38 +18,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543734&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001540234",
-   "title": "Intern | Associate - Video & Graphic Design",
-   "company": "AFI Corp",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-08-24 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001540234&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001545249",
-   "title": "Associate Software Engineer  (1)",
-   "company": "Jobfactory",
-   "location": "Malabe",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-07 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000375&jc=0001545249&ec=0000000492",
    "source": "topjobs.lk"
   },
   {
