@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-07T14:23:00Z",
- "threshold": 8,
- "count": 11,
+ "generatedAt": "2026-09-07T14:32:03Z",
+ "threshold": 6,
+ "count": 12,
  "jobs": [
   {
    "id": "tj-0001543734",
@@ -179,6 +179,23 @@
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541020&ec=DEFZZZ",
    "source": "topjobs.lk"
+  },
+  {
+   "id": "15018",
+   "title": "Software Engineer – Integrations",
+   "company": "Softvil Technologies",
+   "location": "Colombo",
+   "category": "Software Engineering",
+   "jobType": "Full-time",
+   "posted": "2026-09-07 18:00:09",
+   "score": 6,
+   "matched": [
+    "python",
+    "restful"
+   ],
+   "blurb": "we are looking for a talented software engineer – integrations to join our team and work on enterprise integration and cloud-based solutions. hybrid position in sri lanka 6-month renewable contract assignment based on performance main requirements 1–2...",
+   "url": "https://itpro.lk/job/15018/",
+   "source": "ITPro.lk"
   }
  ]
 }
