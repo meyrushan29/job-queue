@@ -139,7 +139,7 @@ ALLOWED_CATEGORIES = {"21", "41", "43", "42", "38", "37"}
 
 # Only notify when the score reaches this. Lower it if you get too few alerts,
 # raise it if you get too many.
-SCORE_THRESHOLD = 8
+SCORE_THRESHOLD = 6
 
 # Locations you would actually accept. Leave empty to accept everything.
 ALLOWED_LOCATIONS = {"colombo", "remote", "malabe", "rajagiriya", "nugegoda",
