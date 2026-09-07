@@ -3,7 +3,8 @@ name: Refresh job queue
 on:
   schedule:
     # Every 30 minutes between 03:00 and 15:00 UTC = 08:30 to 20:30 Sri Lanka time.
-    - cron: "0,30 3-15 * * *"
+    # Offset off :00/:30 (GitHub's busiest minutes) so scheduled runs don't get dropped.
+    - cron: "7,37 3-15 * * *"
   workflow_dispatch:        # lets you run it by hand from the Actions tab
   push:
     branches: [main]        # rebuild when you change the filters
