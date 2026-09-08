@@ -1,8 +1,26 @@
 {
- "generatedAt": "2026-09-08T08:00:19Z",
+ "generatedAt": "2026-09-08T12:50:41Z",
  "threshold": 6,
- "count": 11,
+ "count": 13,
  "jobs": [
+  {
+   "id": "tj-0001545702",
+   "title": "AI + Junior Mobile App Developer - React Native",
+   "company": "Nascent Group",
+   "location": "Kottawa",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-08 00:00:00",
+   "score": 33,
+   "matched": [
+    "junior",
+    "react",
+    "react native"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001545702&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
   {
    "id": "tj-0001543734",
    "title": "Junior Full Stack Developer",
@@ -18,6 +36,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543734&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001545762",
+   "title": "React Js | QA | System Intern | BO Intern",
+   "company": "Capsicum Labs",
+   "location": "All island",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-08 00:00:00",
+   "score": 15,
+   "matched": [
+    "react"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001545762&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
