@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-09T08:04:50Z",
+ "generatedAt": "2026-09-09T12:57:00Z",
  "threshold": 6,
  "count": 11,
  "jobs": [
@@ -55,22 +55,6 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001545249",
-   "title": "Associate Software Engineer  (1)",
-   "company": "Jobfactory",
-   "location": "Malabe",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-07 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000375&jc=0001545249&ec=0000000492",
-   "source": "topjobs.lk"
-  },
-  {
    "id": "tj-0001545188",
    "title": "IT Assistant - Graphics, Python & AI (Claude)",
    "company": "Company Name Withheld",
@@ -100,6 +84,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001544921&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001546245",
+   "title": "Associate Software Engineer  (1)",
+   "company": "Jobfactory",
+   "location": "Malabe",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-09 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000375&jc=0001546245&ec=0000000492",
    "source": "topjobs.lk"
   },
   {
