@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-08T17:14:01Z",
+ "generatedAt": "2026-09-09T08:04:50Z",
  "threshold": 6,
- "count": 12,
+ "count": 11,
  "jobs": [
   {
    "id": "tj-0001545702",
@@ -10,7 +10,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-08 00:00:00",
+   "posted": "2026-09-09 00:00:00",
    "score": 33,
    "matched": [
     "junior",
@@ -28,7 +28,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-08 00:00:00",
+   "posted": "2026-09-09 00:00:00",
    "score": 24,
    "matched": [
     "full stack",
@@ -45,7 +45,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-08 00:00:00",
+   "posted": "2026-09-09 00:00:00",
    "score": 15,
    "matched": [
     "react"
@@ -103,19 +103,19 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001540684",
-   "title": "Junior | Intern Graphic Designer",
-   "company": "AdminoxPRO Lanka (Private) Limited",
-   "location": "Batticaloa, Colombo",
+   "id": "tj-0001546026",
+   "title": "AI / MACHINE LEARNING ENGINEER (1)",
+   "company": "Maritime Placements (Pvt) Ltd",
+   "location": "Colombo",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-08-25 00:00:00",
-   "score": 9,
+   "posted": "2026-09-09 00:00:00",
+   "score": 12,
    "matched": [
-    "junior"
+    "machine learning"
    ],
    "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001540684&ec=DEFZZZ",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000023&jc=0001546026&ec=0000000023",
    "source": "topjobs.lk"
   },
   {
@@ -167,36 +167,21 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001541024",
-   "title": "Junior Mobile App Developer",
-   "company": "Nascent Grow (Pvt) Ltd",
-   "location": "Kottawa",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-07 00:00:00",
-   "score": 9,
+   "id": "15040",
+   "title": "Software Engineer (Backend)",
+   "company": "Ucombinator",
+   "location": "Colombo",
+   "category": "Software Engineering",
+   "jobType": "Full-time",
+   "posted": "2026-09-09 09:00:27",
+   "score": 6,
    "matched": [
-    "junior"
+    "python",
+    "restful"
    ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541024&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001541020",
-   "title": "Junior Web & Backend Developer",
-   "company": "Nascent Grow (Pvt) Ltd",
-   "location": "Kottawa",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-07 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541020&ec=DEFZZZ",
-   "source": "topjobs.lk"
+   "blurb": "ucombinator builds software for leading companies across the usa and europe, and provides engineering talent to sri lanka’s top technology firms. our teams work across a range of business domains including artificial intelligence, supply chain, finance,...",
+   "url": "https://itpro.lk/job/15040/",
+   "source": "ITPro.lk"
   }
  ]
 }
