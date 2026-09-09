@@ -1,8 +1,31 @@
 {
- "generatedAt": "2026-09-09T12:57:00Z",
+ "generatedAt": "2026-09-09T17:08:27Z",
  "threshold": 6,
- "count": 11,
+ "count": 12,
  "jobs": [
+  {
+   "id": "15053",
+   "title": "Associate Software Engineer (Backend)",
+   "company": "NEWNOP",
+   "location": "Colombo",
+   "category": "Software Engineering",
+   "jobType": "Full-time",
+   "posted": "2026-09-09 21:18:48",
+   "score": 43,
+   "matched": [
+    "associate",
+    "full stack",
+    "full-stack",
+    "node",
+    "node.js",
+    "react",
+    "rest api",
+    "typescript"
+   ],
+   "blurb": "we are looking for a associate software engineer who is backend-focused but comfortable working across the full stack when needed. you'll work on building, scaling, and maintaining services that power our products, with strong emphasis on code quality,...",
+   "url": "https://itpro.lk/job/15053/",
+   "source": "ITPro.lk"
+  },
   {
    "id": "tj-0001545702",
    "title": "AI + Junior Mobile App Developer - React Native",
@@ -119,6 +142,24 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "15051",
+   "title": "Software Engineer Intern",
+   "company": "Samuel Gnanam IT Centre",
+   "location": "Jaffna",
+   "category": "Software Engineering",
+   "jobType": "Internship",
+   "posted": "2026-09-09 20:21:03",
+   "score": 10,
+   "matched": [
+    "fullstack",
+    "graduate",
+    "llm"
+   ],
+   "blurb": "kickstart your tech career with hands-on experience and industry - ready skills. entrollment deadline: 15th of september 2026 requirements seeking a mandatory university internship placement 4 - 6 months undergraduate pursuing a degree in software...",
+   "url": "https://itpro.lk/job/15051/",
+   "source": "ITPro.lk"
+  },
+  {
    "id": "tj-0001541742",
    "title": "Junior Software Trainer",
    "company": "Webappclouds (Pvt) Ltd",
@@ -165,23 +206,6 @@
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543853&ec=DEFZZZ",
    "source": "topjobs.lk"
-  },
-  {
-   "id": "15040",
-   "title": "Software Engineer (Backend)",
-   "company": "Ucombinator",
-   "location": "Colombo",
-   "category": "Software Engineering",
-   "jobType": "Full-time",
-   "posted": "2026-09-09 09:00:27",
-   "score": 6,
-   "matched": [
-    "python",
-    "restful"
-   ],
-   "blurb": "ucombinator builds software for leading companies across the usa and europe, and provides engineering talent to sri lanka’s top technology firms. our teams work across a range of business domains including artificial intelligence, supply chain, finance,...",
-   "url": "https://itpro.lk/job/15040/",
-   "source": "ITPro.lk"
   }
  ]
 }
