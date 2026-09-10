@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-10T08:03:56Z",
+ "generatedAt": "2026-09-10T12:53:47Z",
  "threshold": 6,
- "count": 15,
+ "count": 14,
  "jobs": [
   {
    "id": "15053",
@@ -110,22 +110,6 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001546245",
-   "title": "Associate Software Engineer  (1)",
-   "company": "Jobfactory",
-   "location": "Malabe",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-09 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000375&jc=0001546245&ec=0000000492",
-   "source": "topjobs.lk"
-  },
-  {
    "id": "tj-0001546026",
    "title": "AI / MACHINE LEARNING ENGINEER (1)",
    "company": "Maritime Placements (Pvt) Ltd",
@@ -139,6 +123,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000023&jc=0001546026&ec=0000000023",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001546843",
+   "title": "Associate Software Engineer  (1)",
+   "company": "Jobfactory",
+   "location": "Malabe",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-10 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000375&jc=0001546843&ec=0000000492",
    "source": "topjobs.lk"
   },
   {
@@ -188,24 +188,6 @@
    ],
    "blurb": "we're hiring an associate software engineer. you'll ship features, kill bugs, write the tests, and learn what separates code that works from code that lasts. on real products, with people who'll actually review your pull requests. your role: assist in...",
    "url": "https://itpro.lk/job/15058/",
-   "source": "ITPro.lk"
-  },
-  {
-   "id": "15051",
-   "title": "Software Engineer Intern",
-   "company": "Samuel Gnanam IT Centre",
-   "location": "Jaffna",
-   "category": "Software Engineering",
-   "jobType": "Internship",
-   "posted": "2026-09-09 20:21:03",
-   "score": 10,
-   "matched": [
-    "fullstack",
-    "graduate",
-    "llm"
-   ],
-   "blurb": "kickstart your tech career with hands-on experience and industry - ready skills. entrollment deadline: 15th of september 2026 requirements seeking a mandatory university internship placement 4 - 6 months undergraduate pursuing a degree in software...",
-   "url": "https://itpro.lk/job/15051/",
    "source": "ITPro.lk"
   },
   {
