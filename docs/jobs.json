@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-09T17:08:27Z",
+ "generatedAt": "2026-09-10T08:03:56Z",
  "threshold": 6,
- "count": 12,
+ "count": 15,
  "jobs": [
   {
    "id": "15053",
@@ -33,7 +33,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-09 00:00:00",
+   "posted": "2026-09-10 00:00:00",
    "score": 33,
    "matched": [
     "junior",
@@ -51,7 +51,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-09 00:00:00",
+   "posted": "2026-09-10 00:00:00",
    "score": 24,
    "matched": [
     "full stack",
@@ -68,7 +68,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-09 00:00:00",
+   "posted": "2026-09-10 00:00:00",
    "score": 15,
    "matched": [
     "react"
@@ -140,6 +140,55 @@
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000023&jc=0001546026&ec=0000000023",
    "source": "topjobs.lk"
+  },
+  {
+   "id": "15054",
+   "title": "Junior Executive - IT Support",
+   "company": "PMF Finance PLC",
+   "location": "Colombo",
+   "category": "IT and Operations",
+   "jobType": "Full-time",
+   "posted": "2026-09-10 01:10:33",
+   "score": 12,
+   "matched": [
+    "graduate",
+    "junior"
+   ],
+   "blurb": "the junior executive - it support will provide day-to-day technical and operational support to ensure the smooth functioning of the organization's it systems, end-user devices, infrastructure, and related technology services. the role will primarily focus...",
+   "url": "https://itpro.lk/job/15054/",
+   "source": "ITPro.lk"
+  },
+  {
+   "id": "14481",
+   "title": "Associate - IT Helpdesk",
+   "company": "Orysys Limited",
+   "location": "Colombo",
+   "category": "IT and Operations",
+   "jobType": "Full-time",
+   "posted": "2026-09-10 10:30:29",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "provide friendly, professional and timely support to customers through the it helpdesk. focus on delivering an excellent customer experience, effective communication and timely resolution or escalation of service requests. key responsibilities: respond to...",
+   "url": "https://itpro.lk/job/14481/",
+   "source": "ITPro.lk"
+  },
+  {
+   "id": "15058",
+   "title": "Associate Software Engineer",
+   "company": "eArrow (Pvt) LTD",
+   "location": "Colombo",
+   "category": "Software Engineering",
+   "jobType": "Full-time",
+   "posted": "2026-09-10 10:44:46",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "we're hiring an associate software engineer. you'll ship features, kill bugs, write the tests, and learn what separates code that works from code that lasts. on real products, with people who'll actually review your pull requests. your role: assist in...",
+   "url": "https://itpro.lk/job/15058/",
+   "source": "ITPro.lk"
   },
   {
    "id": "15051",
