@@ -1,31 +1,8 @@
 {
- "generatedAt": "2026-09-10T12:53:47Z",
+ "generatedAt": "2026-09-10T16:58:39Z",
  "threshold": 6,
- "count": 14,
+ "count": 11,
  "jobs": [
-  {
-   "id": "15053",
-   "title": "Associate Software Engineer (Backend)",
-   "company": "NEWNOP",
-   "location": "Colombo",
-   "category": "Software Engineering",
-   "jobType": "Full-time",
-   "posted": "2026-09-09 21:18:48",
-   "score": 43,
-   "matched": [
-    "associate",
-    "full stack",
-    "full-stack",
-    "node",
-    "node.js",
-    "react",
-    "rest api",
-    "typescript"
-   ],
-   "blurb": "we are looking for a associate software engineer who is backend-focused but comfortable working across the full stack when needed. you'll work on building, scaling, and maintaining services that power our products, with strong emphasis on code quality,...",
-   "url": "https://itpro.lk/job/15053/",
-   "source": "ITPro.lk"
-  },
   {
    "id": "tj-0001545702",
    "title": "AI + Junior Mobile App Developer - React Native",
@@ -140,39 +117,6 @@
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000375&jc=0001546843&ec=0000000492",
    "source": "topjobs.lk"
-  },
-  {
-   "id": "15054",
-   "title": "Junior Executive - IT Support",
-   "company": "PMF Finance PLC",
-   "location": "Colombo",
-   "category": "IT and Operations",
-   "jobType": "Full-time",
-   "posted": "2026-09-10 01:10:33",
-   "score": 12,
-   "matched": [
-    "graduate",
-    "junior"
-   ],
-   "blurb": "the junior executive - it support will provide day-to-day technical and operational support to ensure the smooth functioning of the organization's it systems, end-user devices, infrastructure, and related technology services. the role will primarily focus...",
-   "url": "https://itpro.lk/job/15054/",
-   "source": "ITPro.lk"
-  },
-  {
-   "id": "14481",
-   "title": "Associate - IT Helpdesk",
-   "company": "Orysys Limited",
-   "location": "Colombo",
-   "category": "IT and Operations",
-   "jobType": "Full-time",
-   "posted": "2026-09-10 10:30:29",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "provide friendly, professional and timely support to customers through the it helpdesk. focus on delivering an excellent customer experience, effective communication and timely resolution or escalation of service requests. key responsibilities: respond to...",
-   "url": "https://itpro.lk/job/14481/",
-   "source": "ITPro.lk"
   },
   {
    "id": "15058",
