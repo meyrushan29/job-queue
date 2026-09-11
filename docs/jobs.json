@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-10T16:58:39Z",
+ "generatedAt": "2026-09-11T07:59:22Z",
  "threshold": 6,
- "count": 11,
+ "count": 12,
  "jobs": [
   {
    "id": "tj-0001545702",
@@ -10,7 +10,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-10 00:00:00",
+   "posted": "2026-09-11 00:00:00",
    "score": 33,
    "matched": [
     "junior",
@@ -28,7 +28,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-10 00:00:00",
+   "posted": "2026-09-11 00:00:00",
    "score": 24,
    "matched": [
     "full stack",
@@ -45,7 +45,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-10 00:00:00",
+   "posted": "2026-09-11 00:00:00",
    "score": 15,
    "matched": [
     "react"
@@ -119,20 +119,20 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "15058",
-   "title": "Associate Software Engineer",
-   "company": "eArrow (Pvt) LTD",
-   "location": "Colombo",
-   "category": "Software Engineering",
-   "jobType": "Full-time",
-   "posted": "2026-09-10 10:44:46",
+   "id": "tj-0001547059",
+   "title": "Associate Software Engineer - Department of IT",
+   "company": "Sri Lanka Institute of Information Technology (SLIIT)",
+   "location": "Malabe",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-11 00:00:00",
    "score": 12,
    "matched": [
     "associate"
    ],
-   "blurb": "we're hiring an associate software engineer. you'll ship features, kill bugs, write the tests, and learn what separates code that works from code that lasts. on real products, with people who'll actually review your pull requests. your role: assist in...",
-   "url": "https://itpro.lk/job/15058/",
-   "source": "ITPro.lk"
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001547059&ec=DEFZZZ",
+   "source": "topjobs.lk"
   },
   {
    "id": "tj-0001541742",
@@ -180,6 +180,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001543853&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001547100",
+   "title": "Junior GRC Consultant",
+   "company": "Safeeye",
+   "location": "Colombo 4",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-11 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001547100&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
