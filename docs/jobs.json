@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-11T17:00:11Z",
+ "generatedAt": "2026-09-12T07:52:01Z",
  "threshold": 6,
- "count": 14,
+ "count": 12,
  "jobs": [
   {
    "id": "tj-0001545702",
@@ -10,7 +10,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-11 00:00:00",
+   "posted": "2026-09-12 00:00:00",
    "score": 33,
    "matched": [
     "junior",
@@ -28,7 +28,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-11 00:00:00",
+   "posted": "2026-09-12 00:00:00",
    "score": 24,
    "matched": [
     "full stack",
@@ -45,7 +45,7 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-11 00:00:00",
+   "posted": "2026-09-12 00:00:00",
    "score": 15,
    "matched": [
     "react"
@@ -164,38 +164,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001547059&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001541742",
-   "title": "Junior Software Trainer",
-   "company": "Webappclouds (Pvt) Ltd",
-   "location": "Colombo 5",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-08-28 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541742&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001541740",
-   "title": "QA Intern | Junior QA",
-   "company": "Webappclouds (Pvt) Ltd",
-   "location": "Colombo 5",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-08-28 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001541740&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
