@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-21T08:51:04Z",
+ "generatedAt": "2026-09-21T15:52:12Z",
  "threshold": 6,
- "count": 11,
+ "count": 12,
  "jobs": [
   {
    "id": "tj-0001545702",
@@ -179,6 +179,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000049&jc=0001543913&ec=0000000313",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001550613",
+   "title": "Junior IT Infrastructure Support Engineer (1)",
+   "company": "Micronet Global Services (Pvt) Ltd",
+   "location": "Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-21 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000419&jc=0001550613&ec=0000000552",
    "source": "topjobs.lk"
   }
  ]
