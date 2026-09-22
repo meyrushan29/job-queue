@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-22T13:39:11Z",
+ "generatedAt": "2026-09-22T18:03:24Z",
  "threshold": 6,
- "count": 10,
+ "count": 11,
  "jobs": [
   {
    "id": "tj-0001545702",
@@ -19,6 +19,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001545702&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001551355",
+   "title": "Quality Assurance Officer | Full Stack Developer",
+   "company": "Cognitio Services Private Limited",
+   "location": "Colombo 5",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-22 00:00:00",
+   "score": 15,
+   "matched": [
+    "full stack"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001551355&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
