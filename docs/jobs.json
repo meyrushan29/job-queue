@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-21T15:52:12Z",
+ "generatedAt": "2026-09-22T08:28:00Z",
  "threshold": 6,
- "count": 12,
+ "count": 10,
  "jobs": [
   {
    "id": "tj-0001545702",
@@ -10,7 +10,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-21 00:00:00",
+   "posted": "2026-09-22 00:00:00",
    "score": 33,
    "matched": [
     "junior",
@@ -28,45 +28,13 @@
    "location": "All island",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-09-21 00:00:00",
+   "posted": "2026-09-22 00:00:00",
    "score": 15,
    "matched": [
     "react"
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001545762&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001545188",
-   "title": "IT Assistant - Graphics, Python & AI (Claude)",
-   "company": "Company Name Withheld",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-07 00:00:00",
-   "score": 12,
-   "matched": [
-    "python"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001545188&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001544921",
-   "title": "Python Backend Developers",
-   "company": "Seren IT Services",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-07 00:00:00",
-   "score": 12,
-   "matched": [
-    "python"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001544921&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
