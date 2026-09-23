@@ -1,8 +1,25 @@
 {
- "generatedAt": "2026-09-23T08:30:14Z",
+ "generatedAt": "2026-09-23T13:50:51Z",
  "threshold": 6,
- "count": 9,
+ "count": 10,
  "jobs": [
+  {
+   "id": "tj-0001551862",
+   "title": "Full-stack Engineer - Java & React",
+   "company": "Acentura Pvt Ltd",
+   "location": "Colombo 4",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-23 00:00:00",
+   "score": 30,
+   "matched": [
+    "full-stack",
+    "react"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000494&jc=0001551862&ec=0000000666",
+   "source": "topjobs.lk"
+  },
   {
    "id": "tj-0001551355",
    "title": "Quality Assurance Officer | Full Stack Developer",
