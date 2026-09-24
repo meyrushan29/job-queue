@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-23T18:22:33Z",
+ "generatedAt": "2026-09-24T08:22:47Z",
  "threshold": 6,
  "count": 10,
  "jobs": [
@@ -34,22 +34,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001551355&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001546026",
-   "title": "AI / MACHINE LEARNING ENGINEER (1)",
-   "company": "Maritime Placements (Pvt) Ltd",
-   "location": "Colombo",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-09 00:00:00",
-   "score": 12,
-   "matched": [
-    "machine learning"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000023&jc=0001546026&ec=0000000023",
    "source": "topjobs.lk"
   },
   {
@@ -162,6 +146,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000419&jc=0001550613&ec=0000000552",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001552044",
+   "title": "Junior Executive - IT Systems",
+   "company": "A. Baur & Co. (Pvt.) Ltd",
+   "location": "Colombo 1",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-24 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552044&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
