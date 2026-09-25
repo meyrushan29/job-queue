@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-25T14:35:10Z",
+ "generatedAt": "2026-09-25T18:52:27Z",
  "threshold": 6,
- "count": 12,
+ "count": 7,
  "jobs": [
   {
    "id": "tj-0001551862",
@@ -37,70 +37,6 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001547284",
-   "title": "Application Support Associate",
-   "company": "Zeeks Labs",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-11 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001547284&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001547242",
-   "title": "Associate Software Engineer",
-   "company": "Activ8 Asia (Pvt) Ltd",
-   "location": "Colombo 4",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-11 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001547242&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001547059",
-   "title": "Associate Software Engineer - Department of IT",
-   "company": "Sri Lanka Institute of Information Technology (SLIIT)",
-   "location": "Malabe",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-11 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001547059&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001548692",
-   "title": "Associate Engineer - Business Intelligence   (1)",
-   "company": "Expolanka Freight (Pvt) Ltd",
-   "location": "Colombo",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-16 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000280&jc=0001548692&ec=0000000510",
-   "source": "topjobs.lk"
-  },
-  {
    "id": "tj-0001552504",
    "title": "Business Analyst / Associate Business Analyst",
    "company": "CSG Technologies",
@@ -114,22 +50,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552504&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001547100",
-   "title": "Junior GRC Consultant",
-   "company": "Safeeye",
-   "location": "Colombo 4",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-11 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001547100&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
