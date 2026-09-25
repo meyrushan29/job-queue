@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-25T08:44:55Z",
+ "generatedAt": "2026-09-25T14:35:10Z",
  "threshold": 6,
- "count": 10,
+ "count": 12,
  "jobs": [
   {
    "id": "tj-0001551862",
@@ -101,6 +101,22 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001552504",
+   "title": "Business Analyst / Associate Business Analyst",
+   "company": "CSG Technologies",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-25 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552504&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001547100",
    "title": "Junior GRC Consultant",
    "company": "Safeeye",
@@ -162,6 +178,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552044&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001552787",
+   "title": "Junior Devops Engineer",
+   "company": "MedcubeUSA (Pvt) Ltd",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-25 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552787&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
