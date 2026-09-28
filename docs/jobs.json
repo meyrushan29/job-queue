@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-28T09:40:29Z",
+ "generatedAt": "2026-09-28T18:08:26Z",
  "threshold": 6,
- "count": 7,
+ "count": 9,
  "jobs": [
   {
    "id": "tj-0001551862",
@@ -50,6 +50,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552504&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001553451",
+   "title": "Associate UI / UX Designer",
+   "company": "Strategic Partnership Solutions",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-28 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001553451&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -114,6 +130,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552787&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001553535",
+   "title": "Graphic Designer (Junior | Mid Level)",
+   "company": "Trident",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-28 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001553535&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
