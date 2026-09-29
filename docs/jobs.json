@@ -1,6 +1,152 @@
 {
- "generatedAt": "2026-09-29T09:45:19Z",
+ "generatedAt": "2026-09-29T16:28:58Z",
  "threshold": 6,
- "count": 0,
- "jobs": []
+ "count": 9,
+ "jobs": [
+  {
+   "id": "tj-0001551862",
+   "title": "Full-stack Engineer - Java & React",
+   "company": "Acentura Pvt Ltd",
+   "location": "Colombo 4",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-23 00:00:00",
+   "score": 30,
+   "matched": [
+    "full-stack",
+    "react"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000494&jc=0001551862&ec=0000000666",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001551355",
+   "title": "Quality Assurance Officer | Full Stack Developer",
+   "company": "Cognitio Services Private Limited",
+   "location": "Colombo 5",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-22 00:00:00",
+   "score": 15,
+   "matched": [
+    "full stack"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001551355&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001552504",
+   "title": "Business Analyst / Associate Business Analyst",
+   "company": "CSG Technologies",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-25 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552504&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001553451",
+   "title": "Associate UI / UX Designer",
+   "company": "Strategic Partnership Solutions",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-28 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001553451&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001543913",
+   "title": "Formula 1 Graduate Placement Program (1 year Internship + 3-year job opportunities) (1)",
+   "company": "John Keells IT",
+   "location": "Colombo 2",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-17 00:00:00",
+   "score": 9,
+   "matched": [
+    "graduate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000049&jc=0001543913&ec=0000000313",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001550613",
+   "title": "Junior IT Infrastructure Support Engineer (1)",
+   "company": "Micronet Global Services (Pvt) Ltd",
+   "location": "Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-21 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000419&jc=0001550613&ec=0000000552",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001552044",
+   "title": "Junior Executive - IT Systems",
+   "company": "A. Baur & Co. (Pvt.) Ltd",
+   "location": "Colombo 1",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-24 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552044&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001552787",
+   "title": "Junior Devops Engineer",
+   "company": "MedcubeUSA (Pvt) Ltd",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-25 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552787&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001553535",
+   "title": "Graphic Designer (Junior | Mid Level)",
+   "company": "Trident",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-09-28 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001553535&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  }
+ ]
 }
