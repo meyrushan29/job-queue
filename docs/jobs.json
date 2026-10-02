@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-01T17:00:15Z",
+ "generatedAt": "2026-10-02T09:40:28Z",
  "threshold": 6,
- "count": 11,
+ "count": 14,
  "jobs": [
   {
    "id": "tj-0001551862",
@@ -101,6 +101,38 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001555152",
+   "title": "BMI - Project Associate",
+   "company": "Soundmouse Sri Lanka",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-02 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001555152&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001555114",
+   "title": "Associate Software Engineer C++",
+   "company": "Hitachi Digital Payment Solutions Ltd",
+   "location": "Colombo 6",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-02 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001555114&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001543913",
    "title": "Formula 1 Graduate Placement Program (1 year Internship + 3-year job opportunities) (1)",
    "company": "John Keells IT",
@@ -178,6 +210,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001553535&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001555359",
+   "title": "Junior Executive | Executive - Core Banking Support",
+   "company": "Alliance Finance Co. PLC",
+   "location": "Colombo 7",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-02 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001555359&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
