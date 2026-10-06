@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-05T19:23:26Z",
+ "generatedAt": "2026-10-06T10:10:50Z",
  "threshold": 6,
- "count": 13,
+ "count": 15,
  "jobs": [
   {
    "id": "tj-0001551862",
@@ -133,6 +133,22 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001556178",
+   "title": "Associate Data Analyst",
+   "company": "Sri Lanka Telecom (Services) Ltd",
+   "location": "Colombo 1",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-06 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001556178&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001543913",
    "title": "Formula 1 Graduate Placement Program (1 year Internship + 3-year job opportunities) (1)",
    "company": "John Keells IT",
@@ -210,6 +226,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001555359&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001556393",
+   "title": "Junior ERP Developer",
+   "company": "Ahmad Tea Limited",
+   "location": "Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-06 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001556393&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
