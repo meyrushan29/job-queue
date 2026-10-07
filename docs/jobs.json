@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-07T10:10:05Z",
+ "generatedAt": "2026-10-07T17:32:12Z",
  "threshold": 6,
- "count": 14,
+ "count": 17,
  "jobs": [
   {
    "id": "tj-0001551862",
@@ -34,6 +34,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001554308&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001557051",
+   "title": ". Intern Full Stack Engineer (.NET & Angular)",
+   "company": "Med Cube USA",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-07 00:00:00",
+   "score": 15,
+   "matched": [
+    "full stack"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001557051&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -226,6 +242,38 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001556393&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001557125",
+   "title": "Junior | Intern Graphic Designer",
+   "company": "Colombo Academy of Hospitality Management (Pvt) Ltd",
+   "location": "Malabe",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-07 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001557125&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001557055",
+   "title": "Junior Software Engineer (.Net)",
+   "company": "Med Cube USA",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-07 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001557055&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
