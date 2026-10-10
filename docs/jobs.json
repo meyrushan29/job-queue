@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-09T17:10:19Z",
+ "generatedAt": "2026-10-10T09:44:34Z",
  "threshold": 6,
- "count": 15,
+ "count": 13,
  "jobs": [
   {
    "id": "tj-0001554308",
@@ -33,22 +33,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001557051&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001552504",
-   "title": "Business Analyst / Associate Business Analyst",
-   "company": "CSG Technologies",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-25 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552504&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -145,22 +129,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000049&jc=0001543913&ec=0000000313",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001552787",
-   "title": "Junior Devops Engineer",
-   "company": "MedcubeUSA (Pvt) Ltd",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-25 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001552787&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
