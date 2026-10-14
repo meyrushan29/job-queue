@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-14T08:37:18Z",
+ "generatedAt": "2026-10-14T14:03:23Z",
  "threshold": 6,
- "count": 13,
+ "count": 14,
  "jobs": [
   {
    "id": "tj-0001554308",
@@ -209,6 +209,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001559071&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001559708",
+   "title": "Junior IT Executive  (1)",
+   "company": "Micronet Global Services (Pvt) Ltd",
+   "location": "Colombo 2",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-14 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000419&jc=0001559708&ec=0000000552",
    "source": "topjobs.lk"
   }
  ]
