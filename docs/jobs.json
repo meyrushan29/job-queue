@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-16T08:05:02Z",
+ "generatedAt": "2026-10-16T13:13:26Z",
  "threshold": 6,
- "count": 14,
+ "count": 16,
  "jobs": [
   {
    "id": "tj-0001557051",
@@ -17,6 +17,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001557051&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001560546",
+   "title": "Full Stack Developer Intern",
+   "company": "MedCubeUSA",
+   "location": "Colombo 1",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-16 00:00:00",
+   "score": 15,
+   "matched": [
+    "full stack"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001560546&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -113,6 +129,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001559916&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001560653",
+   "title": "Software Engineer - Python",
+   "company": "InSync Technologies (Pvt) Ltd",
+   "location": "Malabe",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-16 00:00:00",
+   "score": 12,
+   "matched": [
+    "python"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001560653&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
