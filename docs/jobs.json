@@ -1,8 +1,26 @@
 {
- "generatedAt": "2026-10-16T13:13:26Z",
+ "generatedAt": "2026-10-16T17:41:02Z",
  "threshold": 6,
- "count": 16,
+ "count": 19,
  "jobs": [
+  {
+   "id": "tj-0001561012",
+   "title": "Trainee Mobile Developer - React Native & AI (EdTech)",
+   "company": "Company Name Withheld",
+   "location": "All island",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-16 00:00:00",
+   "score": 27,
+   "matched": [
+    "react",
+    "react native",
+    "trainee"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001561012&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
   {
    "id": "tj-0001557051",
    "title": ". Intern Full Stack Engineer (.NET & Angular)",
@@ -17,6 +35,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001557051&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001560867",
+   "title": "Full-Stack Engineer",
+   "company": "Levein",
+   "location": "Colombo 5",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-16 00:00:00",
+   "score": 15,
+   "matched": [
+    "full-stack"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001560867&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -129,6 +163,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001559916&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001560920",
+   "title": "Associate - DevOps Engineer",
+   "company": "Legacy Health (Pvt) Ltd",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-16 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001560920&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
