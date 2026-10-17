@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-16T17:41:02Z",
+ "generatedAt": "2026-10-17T07:42:52Z",
  "threshold": 6,
- "count": 19,
+ "count": 16,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -67,38 +67,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001560546&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001555152",
-   "title": "BMI - Project Associate",
-   "company": "Soundmouse Sri Lanka",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-02 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001555152&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001555114",
-   "title": "Associate Software Engineer C++",
-   "company": "Hitachi Digital Payment Solutions Ltd",
-   "location": "Colombo 6",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-02 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001555114&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -211,22 +179,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000049&jc=0001543913&ec=0000000313",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001555359",
-   "title": "Junior Executive | Executive - Core Banking Support",
-   "company": "Alliance Finance Co. PLC",
-   "location": "Colombo 7",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-02 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001555359&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
