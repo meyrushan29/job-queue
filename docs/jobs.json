@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-17T15:54:57Z",
+ "generatedAt": "2026-10-18T07:57:34Z",
  "threshold": 6,
- "count": 16,
+ "count": 15,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -163,22 +163,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001560653&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001543913",
-   "title": "Formula 1 Graduate Placement Program (1 year Internship + 3-year job opportunities) (1)",
-   "company": "John Keells IT",
-   "location": "Colombo 2",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-09-17 00:00:00",
-   "score": 9,
-   "matched": [
-    "graduate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000049&jc=0001543913&ec=0000000313",
    "source": "topjobs.lk"
   },
   {
