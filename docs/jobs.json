@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-25T13:20:40Z",
+ "generatedAt": "2026-10-25T17:12:26Z",
  "threshold": 6,
- "count": 15,
+ "count": 16,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -68,6 +68,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001560546&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001563744",
+   "title": "Full - Stack Engineer - Java & React",
+   "company": "Acentura Pvt Ltd",
+   "location": "Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-25 00:00:00",
+   "score": 15,
+   "matched": [
+    "react"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000494&jc=0001563744&ec=0000000666",
    "source": "topjobs.lk"
   },
   {
