@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-25T17:12:26Z",
+ "generatedAt": "2026-10-26T08:47:36Z",
  "threshold": 6,
- "count": 16,
+ "count": 17,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -28,7 +28,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-25 00:00:00",
+   "posted": "2026-10-26 00:00:00",
    "score": 24,
    "matched": [
     "react",
@@ -205,7 +205,7 @@
    "location": "Colombo 1",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-25 00:00:00",
+   "posted": "2026-10-26 00:00:00",
    "score": 12,
    "matched": [
     "associate"
@@ -260,6 +260,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001563328&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001563877",
+   "title": "Junior Photographer | Junior Graphic Designer",
+   "company": "The CEO Sri Lanka",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-26 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001563877&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
