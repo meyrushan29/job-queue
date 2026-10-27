@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-26T16:04:45Z",
+ "generatedAt": "2026-10-27T08:53:17Z",
  "threshold": 6,
- "count": 17,
+ "count": 15,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -28,7 +28,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-26 00:00:00",
+   "posted": "2026-10-27 00:00:00",
    "score": 24,
    "matched": [
     "react",
@@ -84,38 +84,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000494&jc=0001563744&ec=0000000666",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001558734",
-   "title": "Associate Business Analyst - Hybrid Work Model",
-   "company": "OXO Tech (Pvt) Ltd",
-   "location": "Colombo 8",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-12 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001558734&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001558726",
-   "title": "Application Support Associate",
-   "company": "Zeeks Lab Private Limited",
-   "location": "Colombo 4",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-12 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001558726&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -205,7 +173,7 @@
    "location": "Colombo 1",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-26 00:00:00",
+   "posted": "2026-10-27 00:00:00",
    "score": 12,
    "matched": [
     "associate"
@@ -269,7 +237,7 @@
    "location": "Colombo 3",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-26 00:00:00",
+   "posted": "2026-10-27 00:00:00",
    "score": 9,
    "matched": [
     "junior"
