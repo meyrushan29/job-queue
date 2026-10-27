@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-27T15:18:32Z",
+ "generatedAt": "2026-10-27T20:13:30Z",
  "threshold": 6,
- "count": 16,
+ "count": 14,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -167,22 +167,6 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001564649",
-   "title": "AI | ML Engineer",
-   "company": "SLIIT Non-Academic",
-   "location": "Malabe",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-27 00:00:00",
-   "score": 12,
-   "matched": [
-    "ml engineer"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001564649&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
    "id": "tj-0001561356",
    "title": "Associate Data Analyst - Data Compliance",
    "company": "Affixcon Pty Ltd",
@@ -196,22 +180,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001561356&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001559071",
-   "title": "Junior Software Developer",
-   "company": "UN Consortium",
-   "location": "Colombo 5",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-13 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001559071&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
