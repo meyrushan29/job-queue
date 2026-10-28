@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-28T09:33:42Z",
+ "generatedAt": "2026-10-28T16:16:27Z",
  "threshold": 6,
- "count": 16,
+ "count": 17,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -244,6 +244,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001563328&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001565071",
+   "title": "Junior Executive - Database Administrator (1)",
+   "company": "Softlogic Finance PLC",
+   "location": "Colombo 10",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-10-28 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000062&jc=0001565071&ec=0000000714",
    "source": "topjobs.lk"
   },
   {
