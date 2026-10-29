@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-28T16:16:27Z",
+ "generatedAt": "2026-10-29T09:50:46Z",
  "threshold": 6,
- "count": 17,
+ "count": 16,
  "jobs": [
   {
    "id": "tj-0001561012",
@@ -28,7 +28,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-28 00:00:00",
+   "posted": "2026-10-29 00:00:00",
    "score": 24,
    "matched": [
     "react",
@@ -205,29 +205,13 @@
    "location": "Colombo 1",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-28 00:00:00",
+   "posted": "2026-10-29 00:00:00",
    "score": 12,
    "matched": [
     "associate"
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001561356&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001559708",
-   "title": "Junior IT Executive  (1)",
-   "company": "Micronet Global Services (Pvt) Ltd",
-   "location": "Colombo 2",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-14 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000419&jc=0001559708&ec=0000000552",
    "source": "topjobs.lk"
   },
   {
@@ -269,7 +253,7 @@
    "location": "Colombo 3",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-10-28 00:00:00",
+   "posted": "2026-10-29 00:00:00",
    "score": 9,
    "matched": [
     "junior"
