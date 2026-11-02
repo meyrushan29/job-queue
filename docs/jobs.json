@@ -1,8 +1,27 @@
 {
- "generatedAt": "2026-11-01T16:54:31Z",
+ "generatedAt": "2026-11-02T10:54:38Z",
  "threshold": 6,
- "count": 10,
+ "count": 11,
  "jobs": [
+  {
+   "id": "tj-0001566670",
+   "title": "Full Stack Mobile App Developer (Flutter + Node.js)",
+   "company": "Ceylon Institute of Software Enginnering and Law",
+   "location": "Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-02 00:00:00",
+   "score": 54,
+   "matched": [
+    "flutter",
+    "full stack",
+    "node",
+    "node.js"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001566670&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
   {
    "id": "tj-0001561563",
    "title": "Experienced React Native Mobile App Developer",
@@ -10,7 +29,7 @@
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-11-01 00:00:00",
+   "posted": "2026-11-02 00:00:00",
    "score": 24,
    "matched": [
     "react",
@@ -155,7 +174,7 @@
    "location": "Colombo 3",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-11-01 00:00:00",
+   "posted": "2026-11-02 00:00:00",
    "score": 9,
    "matched": [
     "junior"
