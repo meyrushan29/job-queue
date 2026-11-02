@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-02T10:54:38Z",
+ "generatedAt": "2026-11-02T20:43:51Z",
  "threshold": 6,
- "count": 11,
+ "count": 10,
  "jobs": [
   {
    "id": "tj-0001566670",
@@ -117,22 +117,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001564720&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001561356",
-   "title": "Associate Data Analyst - Data Compliance",
-   "company": "Affixcon Pty Ltd",
-   "location": "Colombo 1",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-01 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001561356&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
