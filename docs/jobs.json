@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-02T20:43:51Z",
+ "generatedAt": "2026-11-03T10:44:25Z",
  "threshold": 6,
- "count": 10,
+ "count": 12,
  "jobs": [
   {
    "id": "tj-0001566670",
@@ -23,13 +23,30 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001567162",
+   "title": "Full Stack Developer (Java & React)",
+   "company": "Fortunaglobal (Pvt) Limited",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-03 00:00:00",
+   "score": 30,
+   "matched": [
+    "full stack",
+    "react"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001567162&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001561563",
    "title": "Experienced React Native Mobile App Developer",
    "company": "Nascent Grow (Pvt) Ltd",
    "location": "Kottawa",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-11-02 00:00:00",
+   "posted": "2026-11-03 00:00:00",
    "score": 24,
    "matched": [
     "react",
@@ -120,6 +137,22 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001567233",
+   "title": "Associate Business Analyst",
+   "company": "Prima Management Services (Pvt) Ltd",
+   "location": "Rajagiriya",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-03 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001567233&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001563328",
    "title": "Junior Graphic Designer Cum Video Editor",
    "company": "Legacy Health (Pvt) Ltd",
@@ -158,7 +191,7 @@
    "location": "Colombo 3",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-11-02 00:00:00",
+   "posted": "2026-11-03 00:00:00",
    "score": 9,
    "matched": [
     "junior"
