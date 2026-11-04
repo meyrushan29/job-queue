@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-03T18:23:39Z",
+ "generatedAt": "2026-11-04T18:35:54Z",
  "threshold": 6,
- "count": 12,
+ "count": 11,
  "jobs": [
   {
    "id": "tj-0001566670",
@@ -40,23 +40,6 @@
    "source": "topjobs.lk"
   },
   {
-   "id": "tj-0001561563",
-   "title": "Experienced React Native Mobile App Developer",
-   "company": "Nascent Grow (Pvt) Ltd",
-   "location": "Kottawa",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-03 00:00:00",
-   "score": 24,
-   "matched": [
-    "react",
-    "react native"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001561563&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
    "id": "tj-0001563744",
    "title": "Full - Stack Engineer - Java & React",
    "company": "Acentura Pvt Ltd",
@@ -70,22 +53,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=0000000494&jc=0001563744&ec=0000000666",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001562073",
-   "title": "Associate Engineer | Service Technician - IT",
-   "company": "ITES",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-21 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001562073&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -143,7 +110,7 @@
    "location": "Rajagiriya",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-11-03 00:00:00",
+   "posted": "2026-11-04 00:00:00",
    "score": 12,
    "matched": [
     "associate"
@@ -185,13 +152,29 @@
    "source": "topjobs.lk"
   },
   {
+   "id": "tj-0001567464",
+   "title": "Junior Graphic Designer",
+   "company": "Ministry of Crab",
+   "location": "Colombo 1",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-04 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001567464&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
    "id": "tj-0001563877",
    "title": "Junior Photographer | Junior Graphic Designer",
    "company": "The CEO Sri Lanka",
    "location": "Colombo 3",
    "category": "IT-Software/DB/QA/Web/Graphics/GIS",
    "jobType": "",
-   "posted": "2026-11-03 00:00:00",
+   "posted": "2026-11-04 00:00:00",
    "score": 9,
    "matched": [
     "junior"
