@@ -1,27 +1,8 @@
 {
- "generatedAt": "2026-11-16T11:01:51Z",
+ "generatedAt": "2026-11-16T20:57:59Z",
  "threshold": 6,
- "count": 10,
+ "count": 9,
  "jobs": [
-  {
-   "id": "tj-0001566670",
-   "title": "Full Stack Mobile App Developer (Flutter + Node.js)",
-   "company": "Ceylon Institute of Software Enginnering and Law",
-   "location": "Colombo",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-02 00:00:00",
-   "score": 54,
-   "matched": [
-    "flutter",
-    "full stack",
-    "node",
-    "node.js"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001566670&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
   {
    "id": "tj-0001567162",
    "title": "Full Stack Developer (Java & React)",
