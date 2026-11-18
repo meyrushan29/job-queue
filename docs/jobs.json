@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-17T20:48:43Z",
+ "generatedAt": "2026-11-18T11:30:46Z",
  "threshold": 6,
- "count": 7,
+ "count": 8,
  "jobs": [
   {
    "id": "tj-0001569235",
@@ -115,6 +115,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001569537&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001572592",
+   "title": "Junior IT Support Engineer",
+   "company": "Atlas Global BPO (Pvt) Ltd",
+   "location": "Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-18 00:00:00",
+   "score": 9,
+   "matched": [
+    "junior"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001572592&ec=DEFZZZ",
    "source": "topjobs.lk"
   }
  ]
