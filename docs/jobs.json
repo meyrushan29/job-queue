@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-19T11:29:46Z",
+ "generatedAt": "2026-11-19T19:36:54Z",
  "threshold": 6,
- "count": 9,
+ "count": 10,
  "jobs": [
   {
    "id": "tj-0001569235",
@@ -34,6 +34,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001569240&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001573591",
+   "title": "Full Stack Developer Intern",
+   "company": "Medcube USA",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-19 00:00:00",
+   "score": 15,
+   "matched": [
+    "full stack"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001573591&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
