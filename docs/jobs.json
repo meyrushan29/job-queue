@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-22T11:10:43Z",
+ "generatedAt": "2026-11-22T18:38:35Z",
  "threshold": 6,
- "count": 11,
+ "count": 10,
  "jobs": [
   {
    "id": "tj-0001573771",
@@ -67,22 +67,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001573591&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001563250",
-   "title": "Data Engineer - Python",
-   "company": "Asiawise Lanka (Pvt) Ltd",
-   "location": "All island",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-10-23 00:00:00",
-   "score": 12,
-   "matched": [
-    "python"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001563250&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
