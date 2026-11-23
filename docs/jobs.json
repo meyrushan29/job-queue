@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-22T18:38:35Z",
+ "generatedAt": "2026-11-23T12:20:23Z",
  "threshold": 6,
- "count": 10,
+ "count": 11,
  "jobs": [
   {
    "id": "tj-0001573771",
@@ -132,6 +132,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001573301&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001574733",
+   "title": "Associate Functional Consultant",
+   "company": "Blue Lotus 360� (Pvt) Ltd",
+   "location": "Colombo 3",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-23 00:00:00",
+   "score": 12,
+   "matched": [
+    "associate"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001574733&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
