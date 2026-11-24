@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-23T12:20:23Z",
+ "generatedAt": "2026-11-24T00:19:23Z",
  "threshold": 6,
- "count": 11,
+ "count": 9,
  "jobs": [
   {
    "id": "tj-0001573771",
@@ -18,39 +18,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001573771&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001569235",
-   "title": "Full Stack Developer - Internship | Junior Level (Night Shift) (Colombo 3)",
-   "company": "MedCubeUSA",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-09 00:00:00",
-   "score": 24,
-   "matched": [
-    "full stack",
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001569235&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001569240",
-   "title": "Intern Full Stack Engineer (.Net and Angular) - Colombo 3",
-   "company": "MedCubeUSA",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-09 00:00:00",
-   "score": 15,
-   "matched": [
-    "full stack"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001569240&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
