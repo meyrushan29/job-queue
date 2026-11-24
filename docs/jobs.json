@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-24T13:33:37Z",
+ "generatedAt": "2026-11-24T23:15:38Z",
  "threshold": 6,
- "count": 9,
+ "count": 7,
  "jobs": [
   {
    "id": "tj-0001573771",
@@ -34,23 +34,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001573591&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001569485",
-   "title": "Junior Software Trainee",
-   "company": "Webappclouds (Pvt) Ltd",
-   "location": "Colombo 5",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-10 00:00:00",
-   "score": 12,
-   "matched": [
-    "junior",
-    "trainee"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001569485&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
@@ -115,22 +98,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001574733&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001569537",
-   "title": "Junior Graphic Designer cum Video Editor",
-   "company": "Legacy Health (Pvt) Ltd",
-   "location": "Colombo 3",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-10 00:00:00",
-   "score": 9,
-   "matched": [
-    "junior"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001569537&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
