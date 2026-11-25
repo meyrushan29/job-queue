@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-24T23:15:38Z",
+ "generatedAt": "2026-11-25T12:42:51Z",
  "threshold": 6,
- "count": 7,
+ "count": 8,
  "jobs": [
   {
    "id": "tj-0001573771",
@@ -98,6 +98,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001574733&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001575279",
+   "title": "AI & Backend Engineer (Python)",
+   "company": "MintHRM",
+   "location": "Colombo 6",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-25 00:00:00",
+   "score": 12,
+   "matched": [
+    "python"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001575279&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
