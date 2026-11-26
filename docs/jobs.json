@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-26T12:16:40Z",
+ "generatedAt": "2026-11-26T21:53:56Z",
  "threshold": 6,
- "count": 9,
+ "count": 10,
  "jobs": [
   {
    "id": "tj-0001573771",
@@ -34,6 +34,22 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001573591&ec=DEFZZZ",
+   "source": "topjobs.lk"
+  },
+  {
+   "id": "tj-0001575900",
+   "title": "Mobile App Publishing & Release Specialist (iOS & Android) | Full Stack Developer | Mobile App Developer",
+   "company": "360 Dominance",
+   "location": "Colombo",
+   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
+   "jobType": "",
+   "posted": "2026-11-26 00:00:00",
+   "score": 15,
+   "matched": [
+    "full stack"
+   ],
+   "blurb": "",
+   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001575900&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
