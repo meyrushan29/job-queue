@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-27T21:09:55Z",
+ "generatedAt": "2026-11-28T11:37:46Z",
  "threshold": 6,
- "count": 11,
+ "count": 9,
  "jobs": [
   {
    "id": "tj-0001573771",
@@ -130,38 +130,6 @@
    ],
    "blurb": "",
    "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001575279&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001576421",
-   "title": "Software Engineer / Associate Software Engineer",
-   "company": "Afisol (Pvt) Ltd",
-   "location": "Colombo 1",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-27 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001576421&ec=DEFZZZ",
-   "source": "topjobs.lk"
-  },
-  {
-   "id": "tj-0001575555",
-   "title": "Associate Designer",
-   "company": "Association of Accounting Technicians of Sri Lanka (AAT)",
-   "location": "Colombo 5",
-   "category": "IT-Software/DB/QA/Web/Graphics/GIS",
-   "jobType": "",
-   "posted": "2026-11-27 00:00:00",
-   "score": 12,
-   "matched": [
-    "associate"
-   ],
-   "blurb": "",
-   "url": "https://topjobs.lk/employer/JobAdvertismentServlet?ac=DEFZZZ&jc=0001575555&ec=DEFZZZ",
    "source": "topjobs.lk"
   },
   {
